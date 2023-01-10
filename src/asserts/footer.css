@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+
+
+svg {
+  width:100%;
+}
+.arrow {
+  stroke-width: .3px;
+  stroke:yellow;
+}
+.topball {
+  animation: ball 1.5s ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-delay: 0.3s;
+  cursor:pointer;
+}
+
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill: #4478e3;
+}
+.gooeff {
+    filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}

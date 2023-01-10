@@ -22,7 +22,7 @@ const App = () => {
       loading ? <Loading /> : <>
         <NavBar />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" exact element={<Home/>} />
           <Route path="/about" element={<About />} />
           <Route path="/technologies/:productId" element={<Technologies />} />
           <Route path="/contact" element={<Contact />} />

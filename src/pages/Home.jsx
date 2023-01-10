@@ -3,6 +3,7 @@ import { Card, Carousel, Row, Col } from "antd"
 import { Typewriter } from '@michaelwwn/react-simple-typewriter'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import OurServices from '../components/OurServices'
 function Home() {
   const services = [
       'Cloud Services',
@@ -22,7 +23,7 @@ function Home() {
           <Card className="md:w-full " bordered={false}>
             <h1 className='text-xl md:text-4xl 2xl:text-7xl'>
               Are you looking for{' '}
-              <span style={{ color: 'blue', fontWeight: 'bold' }}>
+              <span className='text-blue-600 font-bold'>
                 <Typewriter
                   words={services}
                   loop={true}
@@ -57,7 +58,7 @@ function Home() {
               <h3 className='w-full' >
                 <figure className="relative max-w-lg">
                   <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/534285/pexels-photo-534285.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Eat" />
+                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/5483064/pexels-photo-5483064.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Eat" />
                   </a>
                   <figcaption className="absolute px-4 text-lg text-white bottom-6">
                   </figcaption>
@@ -68,7 +69,7 @@ function Home() {
               <h3 className='w-full'>
                 <figure className="relative max-w-lg">
                   <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/3771069/pexels-photo-3771069.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Sleep" />
+                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Sleep" />
                   </a>
                   <figcaption className="absolute px-4 text-lg text-white bottom-6">
                   </figcaption>
@@ -79,7 +80,7 @@ function Home() {
               <h3 className='w-full'>
                 <figure className="relative max-w-lg">
                   <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Code" />
+                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/9242852/pexels-photo-9242852.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Code" />
                   </a>
                   <figcaption className="absolute px-4 text-lg text-white bottom-6">
                   </figcaption>
@@ -90,7 +91,7 @@ function Home() {
               <h3 className='w-full'>
                 <figure className="relative max-w-lg">
                   <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/9999715/pexels-photo-9999715.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Repeat" />
+                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Repeat" />
                   </a>
                   <figcaption className="absolute px-4 text-lg text-white bottom-6">
                   </figcaption>
@@ -100,6 +101,7 @@ function Home() {
           </Carousel>
         </div>
       </div>
+      <OurServices />
     </div>
   )
 }
