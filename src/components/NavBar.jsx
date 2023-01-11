@@ -57,13 +57,13 @@ export default function NavBar() {
 
   return (
     <nav className="w-full bg-white shadow">
-      <div className="justify-between px-4 mx-auto lg:max-w-10xl 2xl:text-2xl md:items-center md:flex md:px-8 ">
+      <div className="justify-between px-4 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 ">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div className="mb-6 md:mb-0">
               <Link to="/" className="flex items-center">
-                <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-8 2xl:h-20" alt="FlowBite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap 2xl:text-[3.5rem]">
+                <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-8 2xl:h-10" alt="FlowBite Logo" />
+                <span className="self-center text-2xl font-semibold whitespace-nowrap">
                   Tekie Hub
                 </span>
               </Link>
