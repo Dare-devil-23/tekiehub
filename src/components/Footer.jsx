@@ -1,14 +1,23 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../asserts/footer.css'
 import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
 const Footer = () => {
+    useEffect(() => {
+        window.addEventListener("scroll",()=>{});
+      }, []);
+      const handleClick = () => {
+        window.scrollTo({
+            top: window.screen.width > 450 ? 73 : 85,
+          behavior: "smooth",
+        });
+      }
     return (
 
-        <footer >
+        <footer className='text-sm lg:text-md'>
             <div className="md:flex p-4 sm:p-6 mt-10">
                 <div className="mb-6 md:mb-0">
-                    <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>
+                    <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>
                     <p className=" ml-5 md:ml-10">
                         Don't miss any new updates on Technologies.! Follow us on social media.
                     </p>
@@ -39,37 +48,37 @@ const Footer = () => {
                 </div>
                 <div className="flex justify-around flex-1">
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Technologies</h2>
+                        <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Technologies</h2>
                         <ul className="text-gray-600 ">
                             <li className="mb-1">
-                                <Link to="/technologies/1">
+                                <Link to="/technologies/1" onClick={() => handleClick()}>
                                     Cloud Services
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/2">
+                                <Link to="/technologies/2" onClick={() => handleClick()}>
                                     Data Science
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/3">
+                                <Link to="/technologies/3" onClick={() => handleClick()}>
                                     RPA
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/4">
+                                <Link to="/technologies/4" onClick={() => handleClick()}>
                                     SAP
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/4">
+                                <Link to="/technologies/5" onClick={() => handleClick()}>
                                     Python
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">Contact</h2>
+                        <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Contact</h2>
                         <ul className="text-gray-600">
                             <li className="mb-1">9319 LBJ Freeway</li>
                             <li className="mb-1">Suite 116, Dallas, TX 75243</li>
