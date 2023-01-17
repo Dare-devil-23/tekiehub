@@ -1,3 +1,5 @@
+import { InputNumber , Card} from 'antd';
+import Input from 'antd/lib/input/Input';
 import React, { useEffect } from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 
@@ -7,13 +9,13 @@ function Careers() {
   }, []);
   const handleClick = () => {
     window.scrollTo({
-      top: window.screen.width > 450 ? 700 :1000,
+      top: window.screen.width > 450 ? 700 : 1000,
       behavior: "smooth",
     });
   }
   return (
     <div className='min-h-screen'>
-      <div className='min-h-screen bg-gray-50'>
+      <div>
         <div
           style={{
             backgroundImage: `url(https://images.pexels.com/photos/4384998/pexels-photo-4384998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)`
@@ -23,7 +25,7 @@ function Careers() {
           <div className='flex flex-col  text-white items-center h-screen mb-12 bg-transparent backdrop-blur-sm'>
             <div className='h-4/5 flex justify-center flex-col items-center'>
               <div className="p-5 text-5xl">
-              Check our current openings!!
+                Check our current openings!!
               </div>
               <p className='w-3/4 mx-auto text-xl'>
                 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
@@ -39,16 +41,32 @@ function Careers() {
           </div>
         </div>
 
-        <div className="m-2 p-5 md:m-28 md:mt-16 md:p-20 text-lg min-h-screen">
+        <div className="m-2 p-5 md:m-16 md:p-16 text-lg min-h-screen">
 
-          <h2 className="text-4xl font-extrabold ">Who we are?</h2>
-          <p className="my-4 text-lg text-gray-500">TekieHub Focal point is unlocking a client remarkable application which has high potential with ease and perfect adaptability. We have accurate intelligence, for all customer business needs to transform into perfect shape. We are ready to deliver the Professional Services for all MSP works. We at CYBERINFO are thriving to establish a strong international presence and building a remarkable record of success that now includes satisfied customers. TekieHub, leadership continues to celebrate its customer success as our own success.</p>
-          
-          <h2 className="text-4xl font-extrabold ">What we do?</h2>
-          <p className="my-4 text-lg text-gray-500">At TekieHub we are currently building a SIEM Application for next generation as a SAAS based platform in the cyber security area. Using block chain technology, we are building software applications in Medical IT. We are building Logistics applications with Quantum Computing technology</p>
-          
-          <h2 className="text-4xl font-extrabold ">Who we serve?</h2>
-          <p className="my-4 text-lg text-gray-500">TekieHub fulfills the customer wants & needs in the Information technology region, Digital Services Region and Staffing and Recruitment Region. TekieHub has some strong partnerships with direct clients with strongest and most innovative manufacturers.</p>
+          <h2 className="text-4xl font-extrabold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
+          <div className='flex justify-between flex-col lg:flex-row'>
+            <div className='w-full lg:w-1/2 mx-5'>
+              <h3 className='text-xl my-3'>Search for</h3>
+              <Input placeholder='Job tittle or keyword' size='large' className='w-10/12' />
+            </div>
+            <div className='w-full lg:w-1/2 mx-5'>
+              <h3 className='text-xl my-3'>Where</h3>
+              <InputNumber controls={false} placeholder='City state or zipcode' size='large' className='w-10/12' />
+            </div>
+          </div>
+          <div className='mt-10'>
+            <div className='flex w-full justify-center flex-col md:flex-row'>
+              <Card title="Card title" className='shadow-lg hover:bg-sky-100 m-3 bg-sky-50 min-h-[250px]'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              </Card>
+              <Card title="Card title" className='shadow-lg hover:bg-sky-100 m-3 bg-sky-50 min-h-[250px]'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              </Card>
+              <Card title="Card title" className='shadow-lg hover:bg-sky-100 m-3 bg-sky-50 min-h-[250px]'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>

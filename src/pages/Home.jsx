@@ -1,20 +1,31 @@
-import React from 'react'
-import { Card, Carousel, Row, Col } from "antd"
+import React, { useEffect } from 'react'
+import { Card, Row, Col } from "antd"
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import { Typewriter } from '@michaelwwn/react-simple-typewriter'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import OurServices from '../components/OurServices'
 function Home() {
   const services = [
-      'Cloud Services',
-      'Data Science',
-      'RPA',
-      'SAP',
-      'Python'
-    ]
+    'Cloud Services',
+    'Data Science  ',
+    'RPA           ',
+    'SAP           ',
+    'Python        '
+  ]
   const [count, setCount] = useState(1);
   const handleType = (number) => {
     setCount(number % services.length)
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", () => { });
+  }, []);
+  const handleClick = () => {
+    window.scrollTo({
+      top: window.screen.width > 450 ? 73 : 85,
+      behavior: "smooth",
+    });
   }
   return (
     <div className='min-h-screen w-11/12 mx-auto mt-10'>
@@ -29,9 +40,9 @@ function Home() {
                   loop={true}
                   cursor
                   cursorStyle='|'
-                  typeSpeed={100}
-                  deleteSpeed={150}
-                  delaySpeed={1500}
+                  typeSpeed={50}
+                  deleteSpeed={100}
+                  delaySpeed={1200}
                   onType={handleType}
                 />
               </span>
@@ -42,7 +53,7 @@ function Home() {
             </p>
             <Row align='right'>
               <Col span={8} offset={16}>
-                <Link to={`/technologies/${count + 1}`}>
+                <Link to={`/technologies/${count + 1}`} onClick={() => handleClick()}>
                   <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-full py-2 text-center ">
                     Explore
                   </button>
@@ -53,50 +64,31 @@ function Home() {
           </Card>
         </div>
         <div className='md:w-[50%] m-2 md:m-5'>
-          <Carousel autoplay controls={false}>
+          <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            showThumbs={false}
+            swipeable={false}
+            showIndicators={false}
+            showStatus={false}
+            showArrows={false}
+            stopOnHover={false}
+            interval={3700}
+          >
             <div>
-              <h3 className='w-full' >
-                <figure className="relative max-w-lg">
-                  <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/5483064/pexels-photo-5483064.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Eat" />
-                  </a>
-                  <figcaption className="absolute px-4 text-lg text-white bottom-6">
-                  </figcaption>
-                </figure>
-              </h3>
+              <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/5483064/pexels-photo-5483064.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Cloud Services" />
             </div>
             <div>
-              <h3 className='w-full'>
-                <figure className="relative max-w-lg">
-                  <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Sleep" />
-                  </a>
-                  <figcaption className="absolute px-4 text-lg text-white bottom-6">
-                  </figcaption>
-                </figure>
-              </h3>
+              <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Data Science" />
             </div>
             <div>
-              <h3 className='w-full'>
-                <figure className="relative max-w-lg">
-                  <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/9242852/pexels-photo-9242852.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Code" />
-                  </a>
-                  <figcaption className="absolute px-4 text-lg text-white bottom-6">
-                  </figcaption>
-                </figure>
-              </h3>
+              <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/9242852/pexels-photo-9242852.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="RPA" />
             </div>
             <div>
-              <h3 className='w-full'>
-                <figure className="relative max-w-lg">
-                  <a href="/">
-                    <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Repeat" />
-                  </a>
-                  <figcaption className="absolute px-4 text-lg text-white bottom-6">
-                  </figcaption>
-                </figure>
-              </h3>
+              <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="SAP" />
+            </div>
+            <div>
+              <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Python" />
             </div>
           </Carousel>
         </div>

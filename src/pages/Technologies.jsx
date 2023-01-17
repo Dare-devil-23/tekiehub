@@ -15,8 +15,8 @@ const Technologies = () => {
   }
   return (
     <div>
-      {data.filter(tech => tech.id.toString() === serviceId.toString()).map(tech => (
-        <div className='min-h-screen bg-gray-50'>
+      {data.filter(tech => tech.id.toString() === serviceId.toString()).map((tech , i) => (
+        <div className='min-h-screen' key={i}>
           <div
             style={{
               backgroundImage: `url(${tech.bgImage})`

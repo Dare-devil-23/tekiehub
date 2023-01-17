@@ -13,7 +13,7 @@ function About() {
   }
   return (
     <div className='min-h-screen'>
-      <div className='min-h-screen bg-gray-50'>
+      <div>
         <div
           style={{
             backgroundImage: `url(https://images.pexels.com/photos/1366957/pexels-photo-1366957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)`
