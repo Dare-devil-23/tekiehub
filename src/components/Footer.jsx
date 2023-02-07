@@ -1,21 +1,11 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import '../asserts/footer.css'
 import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
 const Footer = () => {
-    useEffect(() => {
-        window.addEventListener("scroll",()=>{});
-      }, []);
-      const handleClick = () => {
-        window.scrollTo({
-            top: window.screen.width > 450 ? 73 : 85,
-          behavior: "smooth",
-        });
-      }
     return (
-
-        <footer className='text-sm lg:text-md'>
-            <div className="md:flex p-4 sm:p-6 mt-10">
+        <footer className='text-sm lg:text-md pt-10'>
+            <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
                     <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>
                     <p className=" ml-5 md:ml-10">
@@ -31,7 +21,7 @@ const Footer = () => {
                                 <InstagramFilled className='text-xl' />
                                 <span className="sr-only">Instagram page</span>
                             </a>
-                            <a href="/" className="text-gray-500 hover:textblue-6000">
+                            <a href="/" className="text-gray-500 hover:text-blue-600">
                                 <LinkedinFilled className='text-xl' />
                                 <span className="sr-only">Linked in</span>
                             </a>
@@ -51,27 +41,27 @@ const Footer = () => {
                         <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Technologies</h2>
                         <ul className="text-gray-600 ">
                             <li className="mb-1">
-                                <Link to="/technologies/1" onClick={() => handleClick()}>
+                                <Link to="/technologies/1">
                                     Cloud Services
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/2" onClick={() => handleClick()}>
+                                <Link to="/technologies/2">
                                     Data Science
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/3" onClick={() => handleClick()}>
+                                <Link to="/technologies/3">
                                     RPA
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/4" onClick={() => handleClick()}>
+                                <Link to="/technologies/4">
                                     SAP
                                 </Link>
                             </li>
                             <li className="mb-1">
-                                <Link to="/technologies/5" onClick={() => handleClick()}>
+                                <Link to="/technologies/5">
                                     Python
                                 </Link>
                             </li>

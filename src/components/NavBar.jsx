@@ -1,4 +1,4 @@
-import { useState , useEffect} from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DownOutlined, UpOutlined, MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import { Dropdown, Menu, Space } from 'antd';
@@ -7,23 +7,14 @@ import 'antd/dist/antd.min.css';
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const [serviceState, setServiceState] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll",()=>{});
-  }, []);
-  const handleClick = () => {
-    setNavbar(!navbar)
-    window.scrollTo({
-      top: window.screen.width > 450 ? 73 : 85,
-      behavior: "smooth",
-    });
-  }
+
   const menu = (
     <Menu
       items={[
         {
           key: '0',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => handleClick()} rel="noopener noreferrer" to="/technologies/1">
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
               Cloud Services
             </Link>
           ),
@@ -31,7 +22,7 @@ export default function NavBar() {
         {
           key: '1',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => handleClick()} rel="noopener noreferrer" to="/technologies/2">
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
               Data Science
             </Link>
           ),
@@ -39,7 +30,7 @@ export default function NavBar() {
         {
           key: '2',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => handleClick()} rel="noopener noreferrer" to="/technologies/3">
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
               RPA
             </Link>
           ),
@@ -47,7 +38,7 @@ export default function NavBar() {
         {
           key: '3',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => handleClick()} rel="noopener noreferrer" to="/technologies/4">
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
               SAP
             </Link>
           ),
@@ -55,7 +46,7 @@ export default function NavBar() {
         {
           key: '4',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => handleClick()} rel="noopener noreferrer" to="/technologies/5">
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
               Python
             </Link>
           ),
@@ -111,10 +102,10 @@ export default function NavBar() {
                 </Dropdown>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link to="/about" onClick={() => handleClick()}>About US</Link>
+                <Link to="/about" onClick={() => setNavbar(!navbar)}>About US</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link to="/careers" onClick={() => handleClick()}>Careers</Link>
+                <Link to="/careers" onClick={() => setNavbar(!navbar)}>Careers</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <Link to="/contact" onClick={() => setNavbar(!navbar)}>Contact US</Link>
