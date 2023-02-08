@@ -23,7 +23,7 @@ export default function NavBar() {
           key: '1',
           label: (
             <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
-              Data Science
+              DevOps
             </Link>
           ),
         },
@@ -31,7 +31,7 @@ export default function NavBar() {
           key: '2',
           label: (
             <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
-              RPA
+              Data Science
             </Link>
           ),
         },
@@ -39,7 +39,7 @@ export default function NavBar() {
           key: '3',
           label: (
             <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
-              SAP
+              RPA
             </Link>
           ),
         },
@@ -47,6 +47,14 @@ export default function NavBar() {
           key: '4',
           label: (
             <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
+              SAP
+            </Link>
+          ),
+        },
+        {
+          key: '5',
+          label: (
+            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
               Python
             </Link>
           ),
@@ -80,8 +88,10 @@ export default function NavBar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={
+              `flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 
+              ${navbar ? "block" : "hidden" }`
+            }
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-md 2xl:text-lg">
               <li className="text-gray-600 hover:text-blue-600 ">

@@ -10,6 +10,7 @@ import OurSkills from '../components/OurSkills';
 function Home() {
   const services = [
     'Cloud Services...',
+    'DevOps...        ',
     'Data Science...  ',
     'RPA...           ',
     'SAP...           ',
@@ -61,22 +62,25 @@ function Home() {
               showStatus={false}
               showArrows={false}
               stopOnHover={false}
-              interval={4200}
+              interval={4250}
             >
               <div>
-                <img className="rounded-lg h-96 w-full" src='./HeroImages/CloudServices.png' alt="Cloud Services" />
+                <img className="rounded-lg h-96 w-96" src='./HeroImages/cloud.jpg' alt="Cloud Services" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-full" src='./HeroImages/DataScience.png' alt="Data Science" />
+                <img className="rounded-lg h-96 w-96" src='./HeroImages/devops.jpg' alt="DevOps" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/9242852/pexels-photo-9242852.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="RPA" />
+                <img className="rounded-lg h-96 w-96" src='./HeroImages/DataScience.jpg' alt="Data Science" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="SAP" />
+                <img className="rounded-lg h-96 w-96" src="./HeroImages/RPA.jpg" alt="RPA" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-full" src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=860&h=500&dpr=2" alt="Python" />
+                <img className="rounded-lg h-96 w-96" src="./HeroImages/SAP.jpg" alt="SAP" />
+              </div>
+              <div>
+                <img className="rounded-lg h-96 w-96" src="./HeroImages/python.jpg" alt="Python" />
               </div>
             </Carousel>
           </div>
