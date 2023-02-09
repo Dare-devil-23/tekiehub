@@ -11,7 +11,7 @@ const Technologies = () => {
     element.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div>
+    <div className='bg-slate-100'>
       {data.filter(tech => tech.id.toString() === serviceId.toString()).map(
         (tech, i) => {
           const Page = tech.page
@@ -25,7 +25,7 @@ const Technologies = () => {
               >
                 <div className='flex flex-col font-bold text-white h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
                   <div className='h-4/5 flex justify-center flex-col items-center'>
-                    <div className="p-5 text-5xl bg-slate-900 rounded-lg">
+                    <div className="p-5 text-5xl">
                       {tech.name}
                     </div>
                   </div>
@@ -34,16 +34,14 @@ const Technologies = () => {
                   </Link>
                 </div>
               </div>
-              <div className="m-2 p-5 md:m-20 md:mt-16 md:p-10 text-lg" id="content">
-                <p className="mb-3">
+              <div className="m-2 md:m-10 md:mt-5 md:pt-5 pb-10 md:p-10 text-lg" id="content">
+                <div className="mb-3">
                   <Page />
-                </p>
+                </div>
               </div>
-
             </div>
           )
         })}
-
     </div>
   )
 }
