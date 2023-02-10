@@ -11,7 +11,7 @@ const Technologies = () => {
     element.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className='bg-slate-100'>
+    <div>
       {data.filter(tech => tech.id.toString() === serviceId.toString()).map(
         (tech, i) => {
           const Page = tech.page

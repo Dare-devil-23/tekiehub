@@ -53,16 +53,13 @@ const items = [
   },
 ];
 
-
 const DevOps = () => {
   return (
     <Tabs
       defaultActiveKey="1"
       items={items}
+      animated={{tabPane:true}}
       centered
-      tabBarGutter={10}
-      type='card'
-      className='bg-white py-20 rounded-lg shadow-md md:px-10'
     />
   )
 };

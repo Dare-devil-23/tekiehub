@@ -1,4 +1,5 @@
 import { Tabs } from "antd"
+import { RightOutlined } from '@ant-design/icons'
 const Kafka = (
     <div>
         <h1 className='text-lg font-bold md:pr-5 mt-5'>
@@ -303,6 +304,8 @@ const Observability = (
         <Tabs
             defaultActiveKey="1"
             items={items}
+            animated={{tabPane:true}}
+            moreIcon={<RightOutlined className='text-2xl'/>}
             size='large'
             className='text-lg pt-10'
         />

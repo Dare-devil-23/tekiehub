@@ -1,4 +1,5 @@
 import { Tabs } from 'antd';
+import { RightOutlined } from '@ant-design/icons'
 const CNCF = (
     <div>
         <h1 className='text-xl font-bold md:mx-5'>
@@ -143,6 +144,8 @@ const CloudNative = (
             defaultActiveKey="1"
             items={items}
             size='large'
+            animated={{tabPane:true}}
+            moreIcon={<RightOutlined className='text-2xl'/>}
             className='text-lg pt-10'
         />
     </div>

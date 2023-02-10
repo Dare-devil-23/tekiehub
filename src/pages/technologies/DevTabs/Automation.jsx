@@ -1,5 +1,5 @@
 import { Tabs } from 'antd';
-
+import { RightOutlined } from '@ant-design/icons'
 const Docker = (
     <div className='py-5'>
         <h1 className='text-xl font-bold mb-5'>Docker</h1>
@@ -239,6 +239,8 @@ const Automation = (
         <Tabs
             defaultActiveKey="1"
             items={items}
+            animated={{tabPane:true}}
+            moreIcon={<RightOutlined className='text-2xl'/>}
             size='large'
             className='text-lg pt-10'
         />
