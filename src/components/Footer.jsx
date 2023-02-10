@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
 const Footer = () => {
     return (
-        <footer className='text-sm lg:text-md pt-10'>
+        <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
             <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
                     <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>

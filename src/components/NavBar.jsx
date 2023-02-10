@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { DownOutlined, UpOutlined, MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { DownOutlined, UpOutlined, MenuOutlined, CloseOutlined ,CloudOutlined} from '@ant-design/icons';
 import { Dropdown, Menu, Space } from 'antd';
+import { CgInfinity } from "react-icons/cg"
+import { VscGraph, VscServerProcess } from "react-icons/vsc"
+import { TbRobot, TbBrandPython } from "react-icons/tb"
 import 'antd/dist/antd.min.css';
 
 export default function NavBar() {
@@ -14,50 +17,56 @@ export default function NavBar() {
         {
           key: '0',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
+            <Link className= "text-lg 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
               Cloud Services
             </Link>
           ),
+          icon: <CloudOutlined className="text-lg"/>
         },
         {
           key: '1',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
+            <Link className= "text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
               DevOps
             </Link>
           ),
+          icon: <CgInfinity className="text-lg w-5"/>
         },
         {
           key: '2',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
+            <Link className= "text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
               Data Science
             </Link>
           ),
+          icon: <VscGraph className="text-lg w-5"/>
         },
         {
           key: '3',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
+            <Link className= "text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
               RPA
             </Link>
           ),
+          icon: <TbRobot className="text-lg w-5"/>
         },
         {
           key: '4',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
+            <Link className= "text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
               SAP
             </Link>
           ),
+          icon: <VscServerProcess className="text-lg w-5"/>
         },
         {
           key: '5',
           label: (
-            <Link className= "text-md 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
+            <Link className= "text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
               Python
             </Link>
           ),
+          icon: <TbBrandPython className="text-lg w-5"/>
         },
 
       ]}
