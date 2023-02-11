@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { data } from "../asserts/technologies.js"
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import { ConfigProvider } from 'antd'
 
 const Technologies = () => {
   let { serviceId } = useParams()
@@ -36,7 +37,15 @@ const Technologies = () => {
               </div>
               <div className="m-2 md:m-10 md:mt-5 md:pt-5 pb-10 md:p-10 text-lg" id="content">
                 <div className="mb-3">
-                  <Page />
+                  <ConfigProvider theme={{
+                    inherit:true,
+                    token:{
+                      colorBorderSecondary: 'white',
+                    }
+                    }}>
+                    <Page />
+                  </ConfigProvider>
+                  
                 </div>
               </div>
             </div>

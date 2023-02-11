@@ -2,33 +2,33 @@ import React from 'react'
 import '../asserts/footer.css'
 import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
+import { Button } from 'antd'
 const Footer = () => {
     return (
         <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
             <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
                     <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>
-                    <p className=" ml-5 md:ml-10">
+                    <p className=" ml-5 md:ml-10 text-[#606060]">
                         Don't miss any new updates on Technologies.! Follow us on social media.
                     </p>
-                    <div className="sm:flex sm:items-center sm:justify-between  mt-8 ml-5 md:ml-10">
+                    <div className="sm:flex sm:items-center sm:justify-between mt-8 ml-5 md:ml-10">
                         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                            <a href="/" className="text-gray-500 hover:text-blue-600">
+                            <Button type='link' href="/" className="p-0">
                                 <FacebookFilled className='text-xl' />
                                 <span className="sr-only">Facebook page</span>
-                            </a>
-                            <a href="/" className="text-gray-500 hover:text-blue-600">
+                            </Button>
+                            <Button type='link' href="/" className="p-0">
                                 <InstagramFilled className='text-xl' />
                                 <span className="sr-only">Instagram page</span>
-                            </a>
-                            <a href="/" className="text-gray-500 hover:text-blue-600">
+                            </Button>
+                            <Button type='link' href="/" className="p-0">
                                 <LinkedinFilled className='text-xl' />
                                 <span className="sr-only">Linked in</span>
-                            </a>
+                            </Button>
                         </div>
                     </div>
-                    <div className="mt-5 ml-5 md:ml-10">
-
+                    <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
                         <CopyrightOutlined className="align-middle mr-1" />
                         <span className="align-middle">
                             {new Date().getFullYear()}
@@ -39,37 +39,37 @@ const Footer = () => {
                 <div className="flex justify-around flex-1">
                     <div>
                         <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Technologies</h2>
-                        <ul className="text-gray-600 ">
-                            <li className="mb-1">
+                        <div className="grid grid-cols-1">
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
                                 <Link to="/technologies/1">
                                     Cloud Services
                                 </Link>
-                            </li>
-                            <li className="mb-1">
+                            </Button>
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
                                 <Link to="/technologies/2">
                                     Data Science
                                 </Link>
-                            </li>
-                            <li className="mb-1">
+                            </Button>
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
                                 <Link to="/technologies/3">
                                     RPA
                                 </Link>
-                            </li>
-                            <li className="mb-1">
+                            </Button>
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
                                 <Link to="/technologies/4">
                                     SAP
                                 </Link>
-                            </li>
-                            <li className="mb-1">
+                            </Button>
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
                                 <Link to="/technologies/5">
                                     Python
                                 </Link>
-                            </li>
-                        </ul>
+                            </Button>
+                        </div>
                     </div>
                     <div>
                         <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Contact</h2>
-                        <ul className="text-gray-600">
+                        <ul className="text-[#606060]">
                             <li className="mb-1">9319 LBJ Freeway</li>
                             <li className="mb-1">Suite 116, Dallas, TX 75243</li>
                             <li className="mb-1">+1(972)-757-8767</li>
@@ -105,9 +105,21 @@ const Footer = () => {
                     <g className="gooeff">
                         <use id="wave1" className="wave" xlinkHref="#wave" x="0" y="1" />
                     </g>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop
+                                offset="20%"
+                                style={{ stopColor: "rgb(0,212,255,1)", stopOpacity: "1" }}
+                                />
+                            <stop
+                            offset="100%"
+                            style={{ stopColor: "rgb(2,0,36,1)", stopOpacity: "1" }}
+                            />
+                        </linearGradient>
+                    </defs>
                     <g className="topball text-[7px] md:text-[5px]">
-                        <text x="85" y="8" >
-                            Tekie Hub
+                        <text x="85" y="8" fill='url(#grad1)' fontFamily='Teko'>
+                            TekieHUB
                         </text>
                     </g>
                 </svg>

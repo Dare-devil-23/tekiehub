@@ -29,7 +29,7 @@ const About = () => {
       </div>
 
       <div className="m-2 p-5 md:m-20 md:mt-16 md:p-10 text-lg" id="content">
-        <h2 className="text-4xl font-extrabold ">
+        <h2 className="text-4xl font-bold ">
           Who we are?
         </h2>
         <p className="m-5 text-lg text-gray-500">
@@ -44,7 +44,7 @@ const About = () => {
           leadership continues to celebrate its customer success as our own success.
         </p>
 
-        <h2 className="text-4xl font-extrabold ">
+        <h2 className="text-4xl font-bold ">
           What we do?
         </h2>
         <p className="m-5 text-lg text-gray-500">
@@ -57,7 +57,7 @@ const About = () => {
           Quantum Computing technology
         </p>
 
-        <h2 className="text-4xl font-extrabold ">
+        <h2 className="text-4xl font-bold ">
           Who we serve?
         </h2>
         <p className="m-5 text-lg text-gray-500">

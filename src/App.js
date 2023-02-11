@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Footer from './components/Footer';
 import Careers from "./pages/Careers";
 import Loading from './pages/Loading';
+
 const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {

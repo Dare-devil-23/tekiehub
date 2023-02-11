@@ -1,4 +1,4 @@
-import { InputNumber, Card } from 'antd';
+import { Card } from 'antd';
 import Input from 'antd/lib/input/Input';
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -17,7 +17,7 @@ const Careers = () => {
         }}
         className="bg-fixed bg-center bg-cover"
       >
-        <div className='flex flex-col  text-white h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
+        <div className='flex flex-col text-white h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
             <div className="p-5 text-5xl">
               Check our current openings!!
@@ -33,7 +33,7 @@ const Careers = () => {
       </div>
 
       <div className="m-2 p-5 md:m-16 md:p-16 text-l" id="content">
-        <h2 className="text-4xl font-extrabold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
+        <h2 className="text-4xl font-bold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
         <div className='flex justify-between flex-col lg:flex-row'>
           <div className='w-full lg:w-1/2 mx-5'>
             <h3 className='text-xl my-3'>Search for</h3>
@@ -41,7 +41,7 @@ const Careers = () => {
           </div>
           <div className='w-full lg:w-1/2 mx-5'>
             <h3 className='text-xl my-3'>Where</h3>
-            <InputNumber controls={false} placeholder='City state or zipcode' size='large' className='w-10/12' />
+            <Input controls={false} placeholder='City state or zipcode' size='large' className='w-10/12' />
           </div>
         </div>
         <div className='mt-10'>

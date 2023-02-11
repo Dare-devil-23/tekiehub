@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Row, Col } from "antd"
+import { Row, Col } from "antd"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Typewriter } from '@michaelwwn/react-simple-typewriter'
@@ -26,10 +26,10 @@ function Home() {
       <div className='min-h-screen w-11/12 mx-auto mt-10 mb-20'>
         <div className='flex flex-col md:flex-row 2xl:my-20'>
           <div className='md:w-[50%] m-2 md:m-5 flex items-center  2xl:m-10'>
-            <Card className="md:w-full " bordered={false}>
-              <h1 className='text-xl md:text-4xl 2xl:text-[42px]'>
+            <div className="md:w-full">
+              <h1 className='text-xl md:text-4xl 2xl:text-[45px]'>
                 Are you looking for placement in {' '}
-                <span className='text-blue-600 font-bold leading-relaxed'>
+                <span className='text-[#1c8dc1] font-bold leading-relaxed'>
                   <Typewriter
                     words={services}
                     loop={true}
@@ -43,14 +43,14 @@ function Home() {
               <Row className='my-16'>
                 <Col span={8}>
                   <Link to={`/technologies/${count + 1}`}>
-                    <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-full py-2 text-center ">
+                    <button type="button" className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-full py-2 text-center ">
                       Explore
                     </button>
                   </Link>
                 </Col>
               </Row>
 
-            </Card>
+            </div>
           </div>
           <div className='md:w-[50%] m-2 md:m-5 2xl:m-10'>
             <Carousel
@@ -62,25 +62,25 @@ function Home() {
               showStatus={false}
               showArrows={false}
               stopOnHover={false}
-              interval={4250}
+              interval={4200}
             >
               <div>
-                <img className="rounded-lg h-96 w-96" src='./HeroImages/cloud.jpg' alt="Cloud Services" />
+                <img className="rounded-2xl h-96 w-96" src='./HeroImages/cloud.jpg' alt="Cloud Services" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-96" src='./HeroImages/devops.jpg' alt="DevOps" />
+                <img className="rounded-2xl h-96 w-96" src='./HeroImages/devops.jpg' alt="DevOps" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-96" src='./HeroImages/DataScience.jpg' alt="Data Science" />
+                <img className="rounded-2xl h-96 w-96" src='./HeroImages/DataScience.jpg' alt="Data Science" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-96" src="./HeroImages/RPA.jpg" alt="RPA" />
+                <img className="rounded-2xl h-96 w-96" src="./HeroImages/RPA.jpg" alt="RPA" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-96" src="./HeroImages/SAP.jpg" alt="SAP" />
+                <img className="rounded-2xl h-96 w-96" src="./HeroImages/SAP.jpg" alt="SAP" />
               </div>
               <div>
-                <img className="rounded-lg h-96 w-96" src="./HeroImages/python.jpg" alt="Python" />
+                <img className="rounded-2xl h-96 w-96" src="./HeroImages/python.jpg" alt="Python" />
               </div>
             </Carousel>
           </div>

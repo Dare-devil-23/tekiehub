@@ -61,7 +61,7 @@ const OurSkills = () => {
         <div className="min-h-screen bg-cover bg-fixed bg-center bg-[url('https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]">
             <div className='bg-transparent backdrop-blur-sm py-10'>
                 <div className='text-5xl text-white text-center pb-10'>
-                    Our <span className='text-blue-500'>Skills</span>
+                    Our <span className='text-sky-400'>Skills</span>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 m-10'>
                     {
@@ -74,18 +74,18 @@ const OurSkills = () => {
                                         strokeWidth={10} 
                                         width={168} 
                                         percent={skill.percent} 
-                                        strokeColor='#87d068'
+                                        strokeColor='#1c8dc1'
                                         format={(percent) => {
                                             return <p className='text-white'>{percent}%</p>
                                         }} 
                                     />
-                                    <div className='text-xl text-center  mt-5 text-blue-400 flex justify-center'>
+                                    <div className='text-xl text-center  mt-5 text-white flex justify-center'>
                                         <span className='mx-2 items-center flex'>
-                                            <Icon className='text-2xl text-green-600'/>
+                                            <Icon className='text-2xl'/>
                                         </span>
                                         {skill.title}
                                     </div>
-                                    <p className='w-full my-5 text-white text-lg'>{skill.description}</p>
+                                    <p className='w-full my-5 text-gray-400 text-lg'>{skill.description}</p>
                                 </div>
                             )
                         })

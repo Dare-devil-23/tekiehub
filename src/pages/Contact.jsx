@@ -71,8 +71,8 @@ const Contact = () => {
             <Form.Item name={['Message']}>
               <Input.TextArea placeholder="Message" size='large' className='rounded-md' />
             </Form.Item>
-            <Form.Item >
-              <button type="button" className="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-full py-2 text-center ">
+            <Form.Item className='flex justify-end'>
+              <button type="button" className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-28 py-3 text-center">
                 Submit
               </button>
             </Form.Item>
