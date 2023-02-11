@@ -99,9 +99,9 @@ export default function NavBar() {
             }
           >
             <div className="flex flex-col md:flex-row">
-              <Button type="link">
-                <Link to="/" onClick={() => setNavbar(!navbar)} className="2xl:text-lg">Home</Link>
-              </Button>
+              <Link to="/" onClick={() => setNavbar(!navbar)} >
+                <Button type="link" className="2xl:text-lg">Home</Button>
+              </Link>
               <Dropdown menu={{ items }} onOpenChange={() => { setServiceState(!serviceState) }} >
                 <Button type="link" >
                   <Space align="center" className="2xl:text-lg">
@@ -114,15 +114,15 @@ export default function NavBar() {
                   </Space>
                 </Button>
               </Dropdown>
-              <Button type="link">
-                <Link to="/about" onClick={() => setNavbar(!navbar)} className="2xl:text-lg">About US</Link>
-              </Button>
-              <Button type="link">
-                <Link to="/careers" onClick={() => setNavbar(!navbar)} className="2xl:text-lg">Careers</Link>
-              </Button>
-              <Button type="link">
-                <Link to="/contact" onClick={() => setNavbar(!navbar)} className="2xl:text-lg">Contact US</Link>
-              </Button>
+              <Link to="/about" onClick={() => setNavbar(!navbar)} >
+                <Button type="link" className="2xl:text-lg">About US</Button>
+              </Link>
+              <Link to="/careers" onClick={() => setNavbar(!navbar)}>
+                <Button type="link" className="2xl:text-lg">Careers</Button>
+              </Link>
+              <Link to="/contact" onClick={() => setNavbar(!navbar)}>
+                <Button type="link" className="2xl:text-lg">Contact US</Button>
+              </Link>
             </div>
           </div>
         </div>
