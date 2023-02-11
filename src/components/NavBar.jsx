@@ -70,7 +70,7 @@ export default function NavBar() {
 
 
   return (
-    <nav className="w-full bg-white shadow">
+    <nav className="w-full bg-white shadow" id='nav'>
       <div className="justify-between px-4 py-3 md:py-0 mx-auto lg:max-w-10xl md:items-center md:flex md:px-8 ">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

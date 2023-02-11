@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
 import { Button } from 'antd'
 const Footer = () => {
+    const handleScroll = () => {
+        const element = document.getElementById("nav");
+        element.scrollIntoView({ behavior: "smooth" });
+      };
     return (
         <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
             <div className="md:flex p-6 sm:p-6">
@@ -41,27 +45,32 @@ const Footer = () => {
                         <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase ">Technologies</h2>
                         <div className="grid grid-cols-1">
                             <Button type="link" className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/1">
+                                <Link to="/technologies/1" onClick={handleScroll}>
                                     Cloud Services
                                 </Link>
                             </Button>
                             <Button type="link" className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/2">
+                                <Link to="/technologies/2" onClick={handleScroll}>
+                                    DevOps
+                                </Link>
+                            </Button>
+                            <Button type="link" className="text-left text-md 2xl:text-lg">
+                                <Link to="/technologies/3" onClick={handleScroll}>
                                     Data Science
                                 </Link>
                             </Button>
                             <Button type="link" className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/3">
+                                <Link to="/technologies/4" onClick={handleScroll}>
                                     RPA
                                 </Link>
                             </Button>
                             <Button type="link" className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/4">
+                                <Link to="/technologies/5" onClick={handleScroll}>
                                     SAP
                                 </Link>
                             </Button>
                             <Button type="link" className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/5">
+                                <Link to="/technologies/6" onClick={handleScroll}>
                                     Python
                                 </Link>
                             </Button>
@@ -110,10 +119,10 @@ const Footer = () => {
                             <stop
                                 offset="20%"
                                 style={{ stopColor: "rgb(0,212,255,1)", stopOpacity: "1" }}
-                                />
+                            />
                             <stop
-                            offset="100%"
-                            style={{ stopColor: "rgb(2,0,36,1)", stopOpacity: "1" }}
+                                offset="100%"
+                                style={{ stopColor: "rgb(2,0,36,1)", stopOpacity: "1" }}
                             />
                         </linearGradient>
                     </defs>
