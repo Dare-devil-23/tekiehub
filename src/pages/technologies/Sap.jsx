@@ -3,6 +3,7 @@ import { Tabs } from 'antd'
 import ERP from "./SapTabs/ERP"
 import  HANA from "./SapTabs/HANA"
 import HanaCloud from "./SapTabs/HanaCloud"
+import MobileHook from '../../components/MobileHook'
 
 const items = [
   {
@@ -35,12 +36,13 @@ const items = [
 ];
 
 const Sap = () => {
+  const isMobile = MobileHook()
   return (
     <Tabs
       defaultActiveKey="1"
       items={items}
       animated={{tabPane:true}}
-      centered
+      centered={!isMobile}
     />
   )
 }

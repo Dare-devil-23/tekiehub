@@ -1,9 +1,11 @@
 import { Tabs } from 'antd';
+import { RightOutlined } from '@ant-design/icons'
 import Automation from './DevTabs/Automation'
 import CloudNative from './DevTabs/CloudNative';
 import Culture from './DevTabs/Culture';
 import Observability from './DevTabs/Observability';
 import Security from './DevTabs/Security';
+import MobileHook from '../../components/MobileHook';
 
 const items = [
   {
@@ -54,12 +56,16 @@ const items = [
 ];
 
 const DevOps = () => {
+  const isMobile = MobileHook();
   return (
     <Tabs
-      defaultActiveKey="1"
+      defaultActiveKey='1'
+      centered={!isMobile}
       items={items}
-      animated={{tabPane:true}}
-      centered
+      animated={{ tabPane: true }}
+      moreIcon={<RightOutlined className='text-2xl' />}
+      size='large'
+      className='text-lg pt-10'
     />
   )
 };

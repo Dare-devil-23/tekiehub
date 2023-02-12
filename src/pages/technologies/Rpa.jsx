@@ -2,6 +2,7 @@ import { Tabs } from 'antd';
 import BluePrism from './RpaTabs/BluePrism'
 import UIPath from './RpaTabs/UIPath';
 import Automation from './RpaTabs/Automation';
+import MobileHook from '../../components/MobileHook';
 
 const items = [
   {
@@ -34,6 +35,7 @@ const items = [
 ];
 
 const Rpa = () => {
+  const isMobile = MobileHook()
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 text-lg'>
@@ -53,7 +55,7 @@ const Rpa = () => {
         defaultActiveKey="1"
         items={items}
         animated={{ tabPane: true }}
-        centered
+        centered={!isMobile}
       />
     </div>
   )

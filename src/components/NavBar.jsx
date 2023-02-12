@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DownOutlined, UpOutlined, MenuOutlined, CloseOutlined, CloudOutlined } from '@ant-design/icons';
-import { Dropdown, Space, Button } from 'antd';
+import { Dropdown, Typography } from 'antd';
 import { CgInfinity } from "react-icons/cg"
 import { VscGraph, VscServerProcess } from "react-icons/vsc"
 import { TbRobot, TbBrandPython } from "react-icons/tb"
@@ -83,11 +83,11 @@ export default function NavBar() {
               </Link>
             </div>
             <div className="md:hidden">
-              <button
+              <Typography.Link
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <CloseOutlined className="p-0 m-0 text-lg" /> : <MenuOutlined className="p-0 m-0 text-lg" />}
-              </button>
+              </Typography.Link>
             </div>
           </div>
         </div>
@@ -98,30 +98,28 @@ export default function NavBar() {
               ${navbar ? "block" : "hidden"}`
             }
           >
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row gap-4">
               <Link to="/" onClick={() => setNavbar(!navbar)} >
-                <Button type="link" className="2xl:text-lg">Home</Button>
+                <Typography.Link className="2xl:text-lg align-top">Home</Typography.Link>
               </Link>
               <Dropdown menu={{ items }} onOpenChange={() => { setServiceState(!serviceState) }} >
-                <Button type="link" >
-                  <Space align="center" className="2xl:text-lg">
+                <Typography.Link className="2xl:text-lg">
                     Technologies
                     {
                       serviceState ?
-                        <UpOutlined className="text-[10px] align-middle" /> :
-                        <DownOutlined className="text-[10px] align-middle" />
+                        <UpOutlined className="text-[10px] align-middle pl-1" /> :
+                        <DownOutlined className="text-[10px] align-middle pl-1" />
                     }
-                  </Space>
-                </Button>
+                </Typography.Link>
               </Dropdown>
               <Link to="/about" onClick={() => setNavbar(!navbar)} >
-                <Button type="link" className="2xl:text-lg">About US</Button>
+                <Typography.Link className="2xl:text-lg align-top">About US</Typography.Link>
               </Link>
               <Link to="/careers" onClick={() => setNavbar(!navbar)}>
-                <Button type="link" className="2xl:text-lg">Careers</Button>
+                <Typography.Link className="2xl:text-lg align-top">Careers</Typography.Link>
               </Link>
               <Link to="/contact" onClick={() => setNavbar(!navbar)}>
-                <Button type="link" className="2xl:text-lg">Contact US</Button>
+                <Typography.Link className="2xl:text-lg align-top">Contact US</Typography.Link>
               </Link>
             </div>
           </div>

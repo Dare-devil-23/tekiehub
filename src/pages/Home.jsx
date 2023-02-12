@@ -27,7 +27,7 @@ function Home() {
         <div className='flex flex-col md:flex-row 2xl:my-20'>
           <div className='md:w-[50%] m-2 md:m-5 flex items-center  2xl:m-10'>
             <div className="md:w-full">
-              <h1 className='text-xl md:text-4xl 2xl:text-[45px]'>
+              <h1 className='text-2xl md:text-4xl xl:text-[38px] 2xl:text-[45px]'>
                 Are you looking for placement in {' '}
                 <span className='text-[#1c8dc1] font-bold leading-relaxed'>
                   <Typewriter
@@ -43,7 +43,7 @@ function Home() {
               <Row className='my-16'>
                 <Col span={8}>
                   <Link to={`/technologies/${count + 1}`}>
-                    <button type="button" className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-full py-2 text-center ">
+                    <button type="button" className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-36 py-2 text-center ">
                       Explore
                     </button>
                   </Link>

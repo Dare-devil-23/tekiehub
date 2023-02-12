@@ -4,6 +4,7 @@ import Apache from './DataScienceTabs/Apache';
 import Tableau from './DataScienceTabs/Tableau';
 import PowerBi from './DataScienceTabs/PowerBi';
 import Google from './DataScienceTabs/Google';
+import MobileHook from '../../components/MobileHook';
 
 const items = [
   {
@@ -54,6 +55,7 @@ const items = [
 ];
 
 const DataScience = () => {
+  const isMobile = MobileHook()
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 text-lg'>
@@ -71,7 +73,7 @@ const DataScience = () => {
         defaultActiveKey="1"
         items={items}
         animated={{ tabPane: true }}
-        centered
+        centered={!isMobile}
       />
     </div>
   )
