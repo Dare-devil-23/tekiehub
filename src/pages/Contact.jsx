@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, Input } from 'antd';
-
+import { motion } from 'framer-motion';
 const validateMessages = {
   // eslint-disable-next-line
   required: '${label} is required!',
@@ -72,9 +72,13 @@ const Contact = () => {
               <Input.TextArea placeholder="Message" size='large' className='rounded-md' />
             </Form.Item>
             <Form.Item className='flex justify-end'>
-              <button type="button" className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-28 py-3 text-center">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                type="button"
+                className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-28 py-3 text-center">
                 Submit
-              </button>
+              </motion.button>
             </Form.Item>
           </Form>
         </div>

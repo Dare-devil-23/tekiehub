@@ -8,7 +8,7 @@ const OurValues = () => {
             <div className='text-5xl text-center p-10'>
                 Our Values
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-20 pb-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-5 md:mx-20 pb-20'>
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg">
                     <div className="flex flex-col items-center pb-10">
                         <img className="w-24 h-24 mt-10 mb-5" src={team} alt="Team Work" />
