@@ -35,7 +35,6 @@ const AIC = (
 )
 const AzureSecurity = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Azure Security</h1>
         <p className='md:px-5'>
             Azure offers the most advanced security products and services. The following table lists Azure
             security.
@@ -44,7 +43,6 @@ const AzureSecurity = (
 )
 const Compliances = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Azure Compliances</h1>
         <p className='md:px-5'>
             Azure offers 90 compliance certifications for global, US government, region-specific, and
             industry specific.
@@ -53,7 +51,6 @@ const Compliances = (
 )
 const AzureStack = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'> Azure Stack</h1>
         <p className='md:px-5'>
             Azure Stack is a service of Azure that allows enterprises to run apps in an on-premises
             environment and perform Azure services in your datacenter. Azure Stack syncs with global Azure
@@ -64,7 +61,6 @@ const AzureStack = (
 const Global = (
 
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'> Azure global availability</h1>
         <p className='md:px-5'>
 
 
@@ -74,8 +70,6 @@ const Global = (
 )
 const AzureCertifications = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Azure Certifications</h1>
-        <br />
         <p className='font-bold'>
             Here is a list of Microsoft Azure certifications.
         </p>
@@ -96,7 +90,6 @@ const AzureCertifications = (
 
 const Government = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Azure for Government</h1>
         <p className='md:px-5'>
             Azure for Government is an exclusive cloud designed for US government agencies including
             federal, state, and local.

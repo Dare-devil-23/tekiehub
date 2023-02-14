@@ -2,7 +2,6 @@ import { Tabs } from 'antd';
 import { RightOutlined } from '@ant-design/icons'
 const AWSServices = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>AWS Services</h1>
         <p className='md:px-5'>
             AWS offers hundreds of services. Some of these include Virtual Private Cloud, EC2, AWS Data
             Transfer, Simple Storage Service, DynamoDB, Elastic Compute Cloud, AWS Key Management
@@ -13,7 +12,6 @@ const AWSServices = (
 )
 const AWSSecurity = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>AWS Security</h1>
         <p className='md:px-5'>
             Cloud security is the highest priority for AWS. As a customer, you will benefit from a data center
             and network architecture built to meet the requirements of the most security-sensitive
@@ -29,7 +27,6 @@ const AWSSecurity = (
 )
 const Compliances = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Compliances</h1>
         <p className='md:px-5'>
             AWS provides 40+ compliance certifications for the global, US, and other countries.
         </p>
@@ -37,7 +34,6 @@ const Compliances = (
 )
 const AWSglobalavailability = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'> AWS global availability</h1>
         <p className='md:px-5'>
 
             AWS offers the largest global footprint in the market. No other cloud provider offers as many
@@ -49,7 +45,6 @@ const AWSglobalavailability = (
 )
 const AWSCertifications = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>AWS Certifications</h1>
         <p className='md:px-5'>
 
             AWS certifications are divided into four major categories – Foundational, Associate,

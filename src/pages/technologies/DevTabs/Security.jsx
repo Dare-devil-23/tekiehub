@@ -3,10 +3,6 @@ import { RightOutlined } from '@ant-design/icons'
 
 const SCA = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Software Composition Analysis (SCA)
-        </h1>
-        <br />
         <p className='md:px-5'>
             Given the fact that open-source software makes up over 90% of the
             codebase of modern applications, SCA has become an indispensable
@@ -40,10 +36,6 @@ const SCA = (
 
 const SAST = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Static Application Security Testing (SAST)
-        </h1>
-        <br />
         <p className='md:px-5'>
             SAST refers to a set of tools that scan codes (source code, binary code, byte
             code) in a non-running (read: static) state. SAST flags weaknesses in the
@@ -68,10 +60,6 @@ const SAST = (
 )
 const DAST = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Dynamic Application Security Testing (DAST)
-        </h1>
-        <br />
         <p className='md:px-5'>
             In contrast to SAST and SCA, DAST (Dynamic Application Security Testing)
             tests for vulnerabilities in a running application. As such, it’s used later in
@@ -100,10 +88,6 @@ const DAST = (
 )
 const ATT = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Automated Testing Tools
-        </h1>
-        <br />
         <p className='md:px-5'>
             The days of large, dedicated QA teams are a thing of the past for
             organizations with successful DevSecOps implementations. As the U.S.
@@ -148,10 +132,6 @@ const ATT = (
 )
 const IST = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Issue Tracking System
-        </h1>
-        <br />
         <p className='md:px-5'>
             The final tool we'll discuss is one that most teams are likely already familiar
             with: issue tracking software. Issue tracking systems support several key

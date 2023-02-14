@@ -2,9 +2,6 @@ import { Tabs } from 'antd';
 import { RightOutlined } from '@ant-design/icons'
 const CNCF = (
     <div>
-        <h1 className='text-xl font-bold md:mx-5'>
-            Cloud Native Computing Foundation (CNCF)
-        </h1>
         <br />
         <p className='md:mx-10'>
             The CNCF was formed in 2015 in response to the abundance of organizations
@@ -39,10 +36,6 @@ const CNCF = (
 
 const Benifits = (
     <div>
-        <h1 className='text-xl font-bold md:mx-5'>
-            Benefits of a cloud native application
-        </h1>
-        <br />
         <p className='md:mx-10'>
             Cloud native applications—or native cloud applications (NCAs)—are
             programs designed for a cloud computing architecture. They have many

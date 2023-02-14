@@ -2,7 +2,6 @@ import { Tabs } from 'antd';
 import { RightOutlined } from '@ant-design/icons'
 const Docker = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Docker</h1>
         <p className='md:px-5'>
             Docker a Linux-based open-source platform. Docker is a suite of DevOps
             automation tools that creates containerized environments for apps, making
@@ -17,7 +16,6 @@ const Docker = (
 )
 const Kubernetes = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Kubernetes</h1>
         <p className='md:px-5'>
             K8s is a container orchestration and automation platform, and it’s widely
             popular amongst DevOps teams. It manages containers at a large scale and
@@ -30,7 +28,6 @@ const Kubernetes = (
 )
 const Raygun = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Raygun</h1>
         <p className='md:px-5'>
             Raygun is an APM (application performance monitoring) tool, and it’s top of the
             class, providing excellent monitoring and crash reporting. Raygun helps DevOps
@@ -41,7 +38,6 @@ const Raygun = (
 )
 const Splunk = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Splunk</h1>
         <p className='md:px-5'>
             Splunk allows you to search, analyze, and visualize machine-generated data or
             logs in real time, and to analyze the machine state and identify hardware failure
@@ -53,7 +49,6 @@ const Splunk = (
 )
 const Git = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Git</h1>
         <p className='md:px-5'>
             Git is one of the most widely used among DevOps tools in the software industry
             world, including by global giants such as Facebook, Amazon, and Microsoft and
@@ -66,7 +61,6 @@ const Git = (
 )
 const Ansible = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Ansible</h1>
         <p className='md:px-5'>
             Ansible is an agentless configuration management tool that is easy to deploy
             and offers continuous delivery. It automates many repetitive tasks, such as
@@ -79,7 +73,6 @@ const Ansible = (
 )
 const Jenkins = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Jenkins</h1>
         <p className='md:px-5'>
             Jenkins is an open-source continuous integration server automates the build
             cycle of a software project and is highly customizable. It allows developers to
@@ -94,7 +87,6 @@ const Jenkins = (
 )
 const Bamboo = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>Bamboo</h1>
         <p className='md:px-5'>
             Bamboo is a CI offering created by Atlassian – makers of Confluence and Jira.
             Bamboo touts “integrations that matter” and has a Small Teams package whose
@@ -107,7 +99,6 @@ const Bamboo = (
 )
 const BitBucket = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>BitBucket</h1>
         <p className='md:px-5'>
             Bitbucket is another repository like GitHub. Bitbucket comes at a lower cost and
             offers developers an opportunity to collaborate throughout the development
@@ -118,7 +109,6 @@ const BitBucket = (
 )
 const GitHub = (
     <div className='py-5'>
-        <h1 className='text-xl font-bold mb-5'>GitHub</h1>
         <p className='md:px-5'>
             Since 2000, GitHub has been one of the top DevOps automation tools for
             collaboration amongst developers. Not only can developers make rapid

@@ -2,10 +2,6 @@ import { Tabs } from "antd"
 import { RightOutlined } from '@ant-design/icons'
 const Kafka = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Kafka
-        </h1>
-        <br />
         <div className='md:px-5'>
             Kafka is an open source distributed event dissemination platform with
             support for high-performance data pipelines, streaming analytics, data
@@ -29,10 +25,6 @@ const Kafka = (
 )
 const GoogleStackdrive = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Google Stackdrive
-        </h1>
-        <br />
         <div className='md:px-5'>
             Google Stackdriver, now known as Google cloud’s operations suite, is
             effective in monitoring, observing, improving and troubleshooting the
@@ -66,10 +58,6 @@ const GoogleStackdrive = (
 )
 const AmazonCloudwatch = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Amazon Cloudwatch
-        </h1>
-        <br />
         <div className='md:px-5'>
             Amazon Cloudwatch is one of the prominent observability tools that
             provides monitoring and management services with actionable data insights
@@ -104,10 +92,6 @@ const AmazonCloudwatch = (
 )
 const Fluentd = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Fluentd
-        </h1>
-        <br />
         <div className='md:px-5'>
             Fluentd is an open-source data collection tool. It is used to analyze data
             from event and application logs. It is a centralizing layer for consolidating
@@ -135,10 +119,6 @@ const Fluentd = (
 )
 const ELK = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            ELK
-        </h1>
-        <br />
         <div className='md:px-5'>
             ELK is a stack that includes three common open-source projects:
             Elasticsearch, Logstash and Kibana. ELK allows you to collect logs from your
@@ -168,10 +148,6 @@ const ELK = (
 )
 const Graylog = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Graylog
-        </h1>
-        <br />
         <div className='md:px-5'>
             Graylog is another centralized log aggregation tool that allows real-time
             search of large amounts of data. It uses the Elasticsearch and MongoDB
@@ -201,10 +177,6 @@ const Graylog = (
 )
 const Loggly = (
     <div>
-        <h1 className='text-lg font-bold md:pr-5 mt-5'>
-            Loggly
-        </h1>
-        <br />
         <div className='md:px-5'>
             Loggly is a log data processing SaaS solution. It has log tracking tools to help
             you monitor and analyze the logs generated from your infrastructure. Since
