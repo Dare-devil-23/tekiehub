@@ -33,14 +33,9 @@ const Careers = () => {
     })
 
   return (
-    <div>
-      <div
-        style={{
-          backgroundImage: `url(https://images.pexels.com/photos/4384998/pexels-photo-4384998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)`
-        }}
-        className="bg-fixed bg-center bg-cover"
-      >
-        <div className='flex flex-col text-white h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
+    <div className='bg-slate-300 pb-8'>
+      <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
+        <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
             <div className="p-5 text-5xl">
               Check our current openings!!
@@ -52,8 +47,8 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className="m-2 p-5 md:m-16 md:p-16 text-l" id="content">
-        <h2 className="text-4xl font-bold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
+      <div className="m-5 p-8 md:m-20 md:mt-16 md:p-10 md:py-20 text-lg bg-white rounded-3xl shadow-xl" id="content">
+        <h2 className="text-3xl font-bold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
         <div className='flex justify-between flex-col lg:flex-row'>
           <div className='w-full lg:w-1/2 mx-5'>
             <h3 className='text-xl my-3'>Search for</h3>
@@ -84,7 +79,7 @@ const Careers = () => {
         <div className='mt-10'>
           {
             results.length ?
-              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                 {
                   results.map((job, i) => (
                     <div key={i}>
@@ -101,9 +96,9 @@ const Careers = () => {
                         centered
                         open={openJob}
                         okText={"Apply Job"}
-                        okButtonProps={{ghost:true}}
+                        okButtonProps={{ ghost: true }}
                         cancelText={"Close"}
-                        cancelButtonProps={{danger:true}}
+                        cancelButtonProps={{ danger: true }}
                         onOk={() => setOpenJob(false)}
                         onCancel={() => setOpenJob(false)}
                       >

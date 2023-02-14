@@ -14,16 +14,16 @@ export default function NavBar() {
     {
       key: '0',
       label: (
-        <Link className="text-lg 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
           Cloud Services
         </Link>
       ),
-      icon: <CloudOutlined className="text-lg" />
+      icon: <CloudOutlined className="text-lg w-5" />
     },
     {
       key: '1',
       label: (
-        <Link className="text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
           DevOps
         </Link>
       ),
@@ -32,7 +32,7 @@ export default function NavBar() {
     {
       key: '2',
       label: (
-        <Link className="text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
           Data Science
         </Link>
       ),
@@ -41,7 +41,7 @@ export default function NavBar() {
     {
       key: '3',
       label: (
-        <Link className="text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
           RPA
         </Link>
       ),
@@ -50,7 +50,7 @@ export default function NavBar() {
     {
       key: '4',
       label: (
-        <Link className="text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
           SAP
         </Link>
       ),
@@ -59,7 +59,7 @@ export default function NavBar() {
     {
       key: '5',
       label: (
-        <Link className="text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
           Python
         </Link>
       ),
@@ -76,10 +76,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div className="">
               <Link to="/" className="flex items-center" onClick={() => setNavbar(false)}>
-                <img src="./logo.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap">
-                  <img src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
-                </span>
+                <img src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
               </Link>
             </div>
             <div className="md:hidden">
@@ -98,7 +95,7 @@ export default function NavBar() {
               ${navbar ? "block" : "hidden"}`
             }
           >
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-10">
               <Link to="/" onClick={() => setNavbar(!navbar)} >
                 <Typography.Link className="2xl:text-lg align-top">Home</Typography.Link>
               </Link>

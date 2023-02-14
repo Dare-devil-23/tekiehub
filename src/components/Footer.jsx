@@ -7,39 +7,39 @@ const Footer = () => {
     const handleScroll = () => {
         const element = document.getElementById("nav");
         element.scrollIntoView({ behavior: "smooth" });
-      };
+    };
     return (
         <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
             <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
-                    <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">Get in touch</h2>
+                    <div className="flex space-x-6 ml-5 mb-5 md:ml-10">
+                        <Typography.Link href="/">
+                            <FacebookFilled className='text-xl' />
+                            <span className="sr-only">Facebook page</span>
+                        </Typography.Link>
+                        <Typography.Link href="/">
+                            <InstagramFilled className='text-xl' />
+                            <span className="sr-only">Instagram page</span>
+                        </Typography.Link>
+                        <Typography.Link href="/">
+                            <LinkedinFilled className='text-xl' />
+                            <span className="sr-only">Linked in</span>
+                        </Typography.Link>
+                    </div>
+                    <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">
+                        Get in touch</h2>
                     <div className='pl-1 md:pl-3'>
-                    <p className=" ml-5 md:ml-10 text-[#606060]">
-                        Don't miss any new updates on Technologies.! Follow us on social media.
-                    </p>
-                    <div className="sm:flex sm:items-center sm:justify-between mt-8 ml-5 md:ml-10">
-                        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                            <Typography.Link href="/">
-                                <FacebookFilled className='text-xl' />
-                                <span className="sr-only">Facebook page</span>
-                            </Typography.Link>
-                            <Typography.Link href="/">
-                                <InstagramFilled className='text-xl' />
-                                <span className="sr-only">Instagram page</span>
-                            </Typography.Link>
-                            <Typography.Link href="/">
-                                <LinkedinFilled className='text-xl' />
-                                <span className="sr-only">Linked in</span>
-                            </Typography.Link>
+                        <p className=" ml-5 md:ml-10 text-[#606060]">
+                            Don't miss any new updates on Technologies.! Follow us on social media.
+                        </p>
+
+                        <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
+                            <CopyrightOutlined className="align-middle mr-1" />
+                            <span className="align-middle">
+                                {new Date().getFullYear()}
+                                {' '}TekieHub. All Rights Reserved.
+                            </span>
                         </div>
-                    </div>
-                    <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
-                        <CopyrightOutlined className="align-middle mr-1" />
-                        <span className="align-middle">
-                            {new Date().getFullYear()}
-                            {' '}TekieHub. All Rights Reserved.
-                        </span>
-                    </div>
                     </div>
                 </div>
                 <div className="flex justify-around flex-1">

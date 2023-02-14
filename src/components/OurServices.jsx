@@ -58,25 +58,30 @@ const data = [
 ]
 const OurServices = () => {
   return (
-    <div className='mx-auto mt-10'>
-      <div className='w-full mx-auto flex flex-col justify-center text-center my-10'>
-        <h1 className='text-4xl m-5 mb-0'>Our Digital Solutions</h1>
-      </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-        {
-          data.map((item, i) => (
-            <Card key={i} className="gap-4 shadow-lg hover:shadow-2xl rounded flex flex-col">
-              <div className='flex align-middle items-center gap-5'>
-                <img src={item.avatar} className="rounded-full hue-rotate-[300deg]" alt={i} width={70} height={70}/>
-                <h1 className='text-lg font-bold'>{item.title}</h1>
-              </div>
-              <div className='text-lg p-5'>
-                {item.description}
-              </div>
-            </Card>
-          ))
-        }
+    <div className='bg-slate-100 mt-24'>
+      <div className='mx-auto p-5 md:p-10 lg:pb-20'>
+        <div className='w-full mx-auto flex flex-col justify-center text-center mb-16 mt-10 md:mt-0'>
+          <h1 className='text-4xl xl:text-3xl 2xl:text-4xl m-5 mb-0 relative group w-fit mx-auto'>
+            Our Digital Solutions
+            <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] animate-pulse transition-all group-hover:w-full"></span>
+          </h1>
+        </div>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8'>
+          {
+            data.map((item, i) => (
+              <Card key={i} className="shadow-lg hover:shadow-2xl rounded flex flex-col">
+                <div className='flex align-middle items-center gap-5'>
+                  <img src={item.avatar} className="rounded-full hue-rotate-[300deg] h-14 2xl:h-16 w-14 2xl:w-16" alt={i} />
+                  <h1 className='text-lg xl:text-md font-bold'>{item.title}</h1>
+                </div>
+                <div className='text-lg md:text-sm 2xl:text-lg p-5'>
+                  {item.description}
+                </div>
+              </Card>
+            ))
+          }
 
+        </div>
       </div>
     </div>
   )
