@@ -69,7 +69,7 @@ const OurServices = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8'>
           {
             data.map((item, i) => (
-              <Card key={i} className="shadow-lg hover:shadow-2xl rounded flex flex-col">
+              <Card key={i} className="shadow-lg hover:shadow-2xl rounded-lg flex flex-col">
                 <div className='flex align-middle items-center gap-5'>
                   <img src={item.avatar} className="rounded-full hue-rotate-[300deg] h-14 2xl:h-16 w-14 2xl:w-16" alt={i} />
                   <h1 className='text-lg xl:text-md font-bold'>{item.title}</h1>
