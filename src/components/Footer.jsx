@@ -10,29 +10,31 @@ const Footer = () => {
     };
     return (
         <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
+            <img src="./logo.png" className="h-10 ml-14" alt="Tekiehub Logo" />
             <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
-                    <div className="flex space-x-6 ml-5 mb-5 md:ml-10">
-                        <Typography.Link href="/">
-                            <FacebookFilled className='text-xl' />
-                            <span className="sr-only">Facebook page</span>
-                        </Typography.Link>
-                        <Typography.Link href="/">
-                            <InstagramFilled className='text-xl' />
-                            <span className="sr-only">Instagram page</span>
-                        </Typography.Link>
-                        <Typography.Link href="/">
-                            <LinkedinFilled className='text-xl' />
-                            <span className="sr-only">Linked in</span>
-                        </Typography.Link>
-                    </div>
                     <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">
-                        Get in touch</h2>
+                        
+                        Get in touch
+                    </h2>
                     <div className='pl-1 md:pl-3'>
                         <p className=" ml-5 md:ml-10 text-[#606060]">
                             Don't miss any new updates on Technologies.! Follow us on social media.
                         </p>
-
+                        <div className="flex space-x-6 ml-5 my-5 md:ml-10">
+                            <Typography.Link href="/">
+                                <FacebookFilled className='text-xl' />
+                                <span className="sr-only">Facebook page</span>
+                            </Typography.Link>
+                            <Typography.Link href="/">
+                                <InstagramFilled className='text-xl' />
+                                <span className="sr-only">Instagram page</span>
+                            </Typography.Link>
+                            <Typography.Link href="/">
+                                <LinkedinFilled className='text-xl' />
+                                <span className="sr-only">Linked in</span>
+                            </Typography.Link>
+                        </div>
                         <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
                             <CopyrightOutlined className="align-middle mr-1" />
                             <span className="align-middle">
@@ -47,32 +49,32 @@ const Footer = () => {
                         <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase">Technologies</h2>
                         <div className="grid grid-cols-1 pl-1 md:pl-3">
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/1" onClick={handleScroll}>
+                                <Link to="/technologies/cloud_services" onClick={handleScroll}>
                                     Cloud Services
                                 </Link>
                             </Typography.Link>
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/2" onClick={handleScroll}>
+                                <Link to="/technologies/devops" onClick={handleScroll}>
                                     DevOps
                                 </Link>
                             </Typography.Link>
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/3" onClick={handleScroll}>
+                                <Link to="/technologies/data_science" onClick={handleScroll}>
                                     Data Science
                                 </Link>
                             </Typography.Link>
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/4" onClick={handleScroll}>
+                                <Link to="/technologies/rpa" onClick={handleScroll}>
                                     RPA
                                 </Link>
                             </Typography.Link>
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/5" onClick={handleScroll}>
+                                <Link to="/technologies/sap" onClick={handleScroll}>
                                     SAP
                                 </Link>
                             </Typography.Link>
                             <Typography.Link className="text-left text-md 2xl:text-lg">
-                                <Link to="/technologies/6" onClick={handleScroll}>
+                                <Link to="/technologies/python" onClick={handleScroll}>
                                     Python
                                 </Link>
                             </Typography.Link>

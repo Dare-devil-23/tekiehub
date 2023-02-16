@@ -8,7 +8,7 @@ const OurValues = () => {
             <div className='text-3xl text-center p-10'>
                 <h1 className='relative group w-fit mx-auto'>
                     Our Values
-                    <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] animate-pulse transition-all group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] duration-700 transition-all group-hover:w-full"></span>
                 </h1>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-5 md:mx-20 pb-20'>

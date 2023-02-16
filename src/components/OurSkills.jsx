@@ -4,8 +4,11 @@ import { AiOutlineSecurityScan, AiFillAndroid } from 'react-icons/ai'
 import { CgInfinity } from 'react-icons/cg'
 import { GiArtificialIntelligence } from 'react-icons/gi'
 import { GoTools } from 'react-icons/go'
+import { VscGraph, VscServerProcess } from "react-icons/vsc"
+import { TbRobot } from "react-icons/tb"
+import { CloudOutlined } from '@ant-design/icons';
 import VisibilitySensor from "react-visibility-sensor";
-import { CircularProgressbar } from "react-circular-progressbar";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
 const data = [
@@ -34,7 +37,31 @@ const data = [
         icon: CgInfinity
     },
     {
+        percent: 92,
+        title: "Cloud Services",
+        description: "We excel at leveraging cloud services to deliver exceptional functionalities and seamless user experiences.",
+        icon: CloudOutlined
+    },
+    {
+        percent: 91,
+        title: "Data Sceience",
+        description: "Our specialized knowledge unlocks data's potential, delivering innovative solutions and driving tangible outcomes.",
+        icon: VscGraph
+    },
+    {
         percent: 90,
+        title: "RPA",
+        description: "Our expertise in RPA streamlines operations, automates tasks, and optimizes processes for greater efficiency.",
+        icon: TbRobot
+    },
+    {
+        percent: 87,
+        title: "SAP",
+        description: "We design SAP solutions that optimize business processes, reduce costs, and drive growth.",
+        icon: VscServerProcess
+    },
+    {
+        percent: 94,
         title: "Application",
         description: "We apply our skills and expertise to help drive better science, technology, economic activity and societal improvement, both directly.",
         icon: MdOutlineSettingsApplications
@@ -64,7 +91,7 @@ const OurSkills = () => {
             <div className='bg-transparent backdrop-blur-sm py-10'>
                 <div className='text-4xl text-white text-center pb-10 relative group w-fit mx-auto'>
                     <h1>Our <span className='text-[#1c8dc1]'>Skills</span></h1>
-                    <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] animate-pulse transition-all group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] transition-all duration-700 group-hover:w-full"></span>
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-10 2xl:gap-4 m-10'>
                     {
@@ -79,7 +106,10 @@ const OurSkills = () => {
                                                 <CircularProgressbar
                                                     value={percentage}
                                                     text={`${percentage}%`}
-                                                    className='w-40 h-40'
+                                                    className='w-40 h-40 mx-auto'
+                                                    styles={buildStyles({
+                                                        pathTransitionDuration: 1,
+                                                    })}
                                                 />
                                             );
                                         }}

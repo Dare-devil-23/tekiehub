@@ -39,7 +39,7 @@ const Rpa = () => {
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 text-lg'>
-        <h1 className='text-3xl font-bold'>Robotic process automation</h1>
+        <h1 className='text-3xl font-bold'>Robotic Process Automation</h1>
         <br />
         <p>
           Robotic Process Automation (RPA) is a program that enables employees to turn their attention

@@ -9,6 +9,7 @@ const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchProp, setSearchProp] = useState("");
   const [openJob, setOpenJob] = useState(false);
+  const [selectedJob, setSelectedJob] = useState({});
 
   const handleScroll = () => {
     const element = document.getElementById("content");
@@ -33,12 +34,12 @@ const Careers = () => {
     })
 
   return (
-    <div className='bg-slate-300 pb-8'>
+    <div className='bg-slate-300 pb-5'>
       <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
         <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
             <div className="p-5 text-5xl">
-              Check our current openings!!
+              Let's Find Your Next Job...
             </div>
           </div>
           <Link to="#" onClick={handleScroll}>
@@ -47,8 +48,7 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className="m-5 p-8 md:m-20 md:mt-16 md:p-10 md:py-20 text-lg bg-white rounded-3xl shadow-xl" id="content">
-        <h2 className="text-3xl font-bold mb-5">LET'S FIND YOUR NEXT JOB.</h2>
+      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
         <div className='flex justify-between flex-col lg:flex-row'>
           <div className='w-full lg:w-1/2 mx-5'>
             <h3 className='text-xl my-3'>Search for</h3>
@@ -86,24 +86,13 @@ const Careers = () => {
                       <Card
                         title={job.role}
                         className='shadow-lg hover:shadow-2xl'
-                        onClick={
-                          () => setOpenJob(true)
-                        }>
+                        onClick={() => (
+                          setOpenJob(true),
+                          setSelectedJob(job)
+                        )}
+                      >
                         {job.location}
                       </Card>
-                      <Modal
-                        title={job.role}
-                        centered
-                        open={openJob}
-                        okText={"Apply Job"}
-                        okButtonProps={{ ghost: true }}
-                        cancelText={"Close"}
-                        cancelButtonProps={{ danger: true }}
-                        onOk={() => setOpenJob(false)}
-                        onCancel={() => setOpenJob(false)}
-                      >
-                        <p>{job.location}</p>
-                      </Modal>
                     </div>
                   ))}
               </div> :
@@ -118,6 +107,19 @@ const Careers = () => {
               />
           }
         </div>
+        <Modal
+          title={selectedJob.role}
+          centered
+          open={openJob}
+          okText={"Apply Job"}
+          okButtonProps={{ ghost: true }}
+          cancelText={"Close"}
+          cancelButtonProps={{ danger: true }}
+          onOk={() => setOpenJob(false)}
+          onCancel={() => setOpenJob(false)}
+        >
+          <p>{selectedJob.location}</p>
+        </Modal>
       </div>
     </div>
   )

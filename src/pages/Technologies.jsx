@@ -18,7 +18,7 @@ const Technologies = () => {
           const Page = tech.page
           return (
             <div className='min-h-screen bg-slate-300 pb-10' key={i}>
-              <div className="bg-gradient-to-br from-gray-900 via-[#0f2443] to-[#6c1097] hover:bg-gradient-to-tr">
+              <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
                 <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
                   <div className='h-4/5 flex justify-center flex-col items-center'>
                     <div className="p-5 text-5xl">
@@ -30,7 +30,7 @@ const Technologies = () => {
                   </Link>
                 </div>
               </div>
-              <div className="m-5 p-8 md:m-20  md:mt-16 md:p-8 md:py-10 text-lg bg-white rounded-3xl shadow-xl" id="content">
+              <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
                 <div className="mb-3">
                   <ConfigProvider theme={{
                     inherit: true,

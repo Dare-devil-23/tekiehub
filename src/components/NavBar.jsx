@@ -14,7 +14,7 @@ export default function NavBar() {
     {
       key: '0',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/1">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/cloud_services">
           Cloud Services
         </Link>
       ),
@@ -23,7 +23,7 @@ export default function NavBar() {
     {
       key: '1',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/2">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/devops">
           DevOps
         </Link>
       ),
@@ -32,7 +32,7 @@ export default function NavBar() {
     {
       key: '2',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/3">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/data_science">
           Data Science
         </Link>
       ),
@@ -41,7 +41,7 @@ export default function NavBar() {
     {
       key: '3',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/4">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/rpa">
           RPA
         </Link>
       ),
@@ -50,7 +50,7 @@ export default function NavBar() {
     {
       key: '4',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/5">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/sap">
           SAP
         </Link>
       ),
@@ -59,7 +59,7 @@ export default function NavBar() {
     {
       key: '5',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/6">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setNavbar(!navbar)} rel="noopener noreferrer" to="/technologies/python">
           Python
         </Link>
       ),

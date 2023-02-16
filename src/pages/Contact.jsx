@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Form, Input } from 'antd';
@@ -38,7 +38,7 @@ const Contact = () => {
   const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   return (
     <div className='min-h-screen bg-slate-300'>
-      <div className="bg-gradient-to-br from-gray-900 via-[#0f2443] to-[#6c1097] hover:bg-gradient-to-tr">
+      <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
         <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
             <div className="p-5 text-5xl">
@@ -50,9 +50,9 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div className="m-5 p-8 md:m-20 md:mt-16 md:p-5 md:py-10 text-lg bg-white rounded-3xl shadow-xl" id="content">
-        <div className='m-5 md:m-20 grid grid-cols-1 lg:grid-cols-3 gap-5' id="content">
-          <div className=''>
+      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
+        <div className='m-5 grid grid-cols-1 lg:grid-cols-3 gap-5' id="content">
+          <div>
             <h1 className='text-4xl mb-10'>
               WE ARE HERE!
             </h1>
@@ -103,7 +103,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <Maps iframe={iframe} />
+      <Maps iframe={iframe}/>
     </div>
   )
 }
