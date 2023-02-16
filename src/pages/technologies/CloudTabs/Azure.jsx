@@ -1,5 +1,5 @@
-import { Tabs } from 'antd';
-import { RightOutlined } from '@ant-design/icons'
+import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
+import { bulma } from '@react-tabtab-next/themes';
 const AIC = (
     <div className='py-5'>
         <h1 className='text-xl font-bold mb-5'>Azure, the Intelligent Cloud</h1>
@@ -189,14 +189,27 @@ const Azure = (
             Integration, Internet of Things, Management, Media, Microsoft Azure Stack, Migration, Mixed
             Reality, Mobile, Networking, Security, Storage, Web, and Windows Virtual Desktop.
         </p>
+        <br />
         <Tabs
-            defaultActiveKey="1"
-            items={items}
-            animated={{ tabPane: true }}
-            moreIcon={<RightOutlined className='text-2xl' />}
-            size='large'
-            className='text-lg pt-10'
-        />
+            showModalButton={false}
+            customStyle={bulma}
+            showArrowButton={true}
+        >
+            <TabList>
+                {
+                    items.map((item) => (
+                        <Tab key={item.key}>{item.label}</Tab>
+                    ))
+                }
+            </TabList>
+            <PanelList>
+                {
+                    items.map((item) => (
+                        <Panel key={item.key}>{item.children}</Panel>
+                    ))
+                }
+            </PanelList>
+        </Tabs>
     </div>
 )
 

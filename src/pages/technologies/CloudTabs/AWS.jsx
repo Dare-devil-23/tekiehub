@@ -1,5 +1,6 @@
-import { Tabs } from 'antd';
-import { RightOutlined } from '@ant-design/icons'
+import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
+import { bulma } from '@react-tabtab-next/themes';
+
 const AWSServices = (
     <div className='py-5'>
         <p className='md:px-5'>
@@ -17,7 +18,7 @@ const AWSSecurity = (
             and network architecture built to meet the requirements of the most security-sensitive
             organizations.
         </p>
-        <br/>
+        <br />
         <p className='md:px-5'>
             AWS security offers services such as infrastructure security, DDoS mitigation, data encryption,
             inventory and configuration, monitoring and logging, identity and access control, and
@@ -120,14 +121,27 @@ const AWS = (
             AWS’s revenue in the year 2018 was $25.6 billion with a profit of $7.2 billion. The revenue is
             expected to grow to $33 billion in 2019.
         </p>
+        <br/>
         <Tabs
-            defaultActiveKey="1"
-            items={items}
-            animated={{ tabPane: true }}
-            moreIcon={<RightOutlined className='text-2xl' />}
-            size='large'
-            className='text-lg pt-10'
-        />
+            showModalButton={false}
+            customStyle={bulma}
+            showArrowButton={true}
+        >
+            <TabList>
+                {
+                    items.map((item) => (
+                        <Tab key={item.key}>{item.label}</Tab>
+                    ))
+                }
+            </TabList>
+            <PanelList>
+                {
+                    items.map((item) => (
+                        <Panel key={item.key}>{item.children}</Panel>
+                    ))
+                }
+            </PanelList>
+        </Tabs>
     </div>
 )
 

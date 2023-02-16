@@ -1,5 +1,5 @@
-import { Tabs } from "antd"
-import { RightOutlined } from '@ant-design/icons'
+import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
+import { bulma } from '@react-tabtab-next/themes';
 const Kafka = (
     <div>
         <div className='md:px-5'>
@@ -273,14 +273,27 @@ const items = [
 const Observability = (
     <div className='w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold'>Observability</h1>
+       <br />
         <Tabs
-            defaultActiveKey="1"
-            items={items}
-            animated={{tabPane:true}}
-            moreIcon={<RightOutlined className='text-2xl'/>}
-            size='large'
-            className='text-lg pt-10'
-        />
+            showModalButton={false}
+            customStyle={bulma}
+            showArrowButton={true}
+        >
+            <TabList>
+                {
+                    items.map((item) => (
+                        <Tab key={item.key}>{item.label}</Tab>
+                    ))
+                }
+            </TabList>
+            <PanelList>
+                {
+                    items.map((item) => (
+                        <Panel key={item.key}>{item.children}</Panel>
+                    ))
+                }
+            </PanelList>
+        </Tabs>
     </div>
 )
 

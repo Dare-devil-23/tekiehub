@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import JobsData from '../asserts/jobsData';
+import {motion} from 'framer-motion'
 
 const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -38,9 +39,13 @@ const Careers = () => {
       <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
         <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
-            <div className="p-5 text-5xl">
+            <motion.div className="p-5 text-5xl"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               Let's Find Your Next Job...
-            </div>
+            </motion.div>
           </div>
           <Link to="#" onClick={handleScroll}>
             <IoIosArrowDown className='text-[40px] animate-bounce text-white hover:animate-none hover:scale-110 font-thin cursor-pointer' />

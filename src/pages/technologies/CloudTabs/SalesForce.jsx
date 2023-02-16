@@ -1,5 +1,5 @@
-import { Tabs } from 'antd';
-import { RightOutlined } from '@ant-design/icons'
+import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
+import { bulma } from '@react-tabtab-next/themes';
 const SalesCloud = (
     <div className='py-5'>
         <p className='md:px-5'>
@@ -280,14 +280,27 @@ const SalesForce = (
             Learn more about the different types of Salesforce Clouds and how these platforms manage
             your company’s sales, marketing, and customer relationship.
         </p>
+        <br />
         <Tabs
-            defaultActiveKey="1"
-            items={items}
-            animated={{ tabPane: true }}
-            moreIcon={<RightOutlined className='text-2xl' />}
-            size='large'
-            className='text-lg pt-10'
-        />
+            showModalButton={false}
+            customStyle={bulma}
+            showArrowButton={true}
+        >
+            <TabList>
+                {
+                    items.map((item) => (
+                        <Tab key={item.key}>{item.label}</Tab>
+                    ))
+                }
+            </TabList>
+            <PanelList>
+                {
+                    items.map((item) => (
+                        <Panel key={item.key}>{item.children}</Panel>
+                    ))
+                }
+            </PanelList>
+        </Tabs>
     </div>
 )
 

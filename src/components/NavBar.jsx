@@ -5,6 +5,7 @@ import { Dropdown, Typography } from 'antd';
 import { CgInfinity } from "react-icons/cg"
 import { VscGraph, VscServerProcess } from "react-icons/vsc"
 import { TbRobot, TbBrandPython } from "react-icons/tb"
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -76,7 +77,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div className="">
               <Link to="/" className="flex items-center" onClick={() => setNavbar(false)}>
-                <img src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
+              <motion.img whileTap={{ scale: 0.9 }} src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
               </Link>
             </div>
             <div className="md:hidden">

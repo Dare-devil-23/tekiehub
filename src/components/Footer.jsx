@@ -3,6 +3,8 @@ import '../asserts/footer.css'
 import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
 import { Typography } from 'antd'
+import { motion } from 'framer-motion'
+
 const Footer = () => {
     const handleScroll = () => {
         const element = document.getElementById("nav");
@@ -10,11 +12,13 @@ const Footer = () => {
     };
     return (
         <footer className='text-sm lg:text-md pt-10 2xl:text-lg'>
-            <img src="./logo.png" className="h-10 ml-14" alt="Tekiehub Logo" />
+
             <div className="md:flex p-6 sm:p-6">
                 <div className="mb-6 md:mb-0">
-                    <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase  ml-5 md:ml-10">
-                        
+                    <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase ml-5 md:ml-10">
+                        <Link to="/" onClick={handleScroll}>
+                            <motion.img whileTap={{ scale: 0.9 }} src="./logo.png" className="h-14 mb-2" alt="Tekiehub Logo" />
+                        </Link>
                         Get in touch
                     </h2>
                     <div className='pl-1 md:pl-3'>
