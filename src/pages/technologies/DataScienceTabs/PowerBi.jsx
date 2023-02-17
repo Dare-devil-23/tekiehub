@@ -5,7 +5,7 @@ const PowerBi = (
     <h1 className='text-2xl font-bold'>Power BI</h1>
     <div>
       <br />
-      <p className='md:px-5'>
+      <p className='md:px-5 text-gray-500'>
         Power BI is one of the essential tools of data science integrated with business
         intelligence. Rich and insightful reports can be generated from a given dataset by using
         Power BI.
@@ -16,7 +16,7 @@ const PowerBi = (
       </p>
       <br />
       <div className='md:px-5'>
-        <ul className='md:px-10 list-disc pl-5'>
+        <ul className='md:px-10 list-disc pl-5 text-gray-500'>
           <li>
             It can be combined with other data science tools from Microsoft for data
             visualization.

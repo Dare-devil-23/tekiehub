@@ -4,7 +4,7 @@ const HANA = (
         S/4 HANA
         </h1>
         <br />
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             <p>SAP S/4 HANA is SAP&#39;s next-generation ERP platform. Used primarily by medium and large
                 enterprises with at least $250 million in annual revenue, S/4 HANA is built on the SAP HANA in-
                 memory database and combines online analytical processing and transaction processing.

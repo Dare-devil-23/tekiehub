@@ -4,7 +4,7 @@ const HanaCloud = (
             S/4HANA Cloud
         </h1>
         <br />
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             <p>SAP S/4 HANA Cloud offers some of the SAP ERP system modules and functionality of on-
                 premises S/4HANA but with quarterly updates rather than annual updates. It is the SaaS version
                 of S/4 HANA. Users access the software via a web browser on any device, and all business
@@ -23,7 +23,7 @@ const HanaCloud = (
                 and partner APIs.
             </p>
             <br />
-            <p className='font-bold'>As of late 2018, 1808 is the next SAP S/4 HANA Cloud release, which comes with AI-powered
+            <p className='font-bold text-gray-900'>As of late 2018, 1808 is the next SAP S/4 HANA Cloud release, which comes with AI-powered
                 &quot;intelligent scenarios.&quot; These include the following:</p>
             <br />
             <ul className='md:px-10 list-disc pl-5'>

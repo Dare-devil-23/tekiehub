@@ -3,7 +3,7 @@ import { bulma } from '@react-tabtab-next/themes';
 
 const AWSServices = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             AWS offers hundreds of services. Some of these include Virtual Private Cloud, EC2, AWS Data
             Transfer, Simple Storage Service, DynamoDB, Elastic Compute Cloud, AWS Key Management
             Service, Amazon CloudWatch, Simple Notification Service, Relational Database Service, Route
@@ -13,13 +13,13 @@ const AWSServices = (
 )
 const AWSSecurity = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Cloud security is the highest priority for AWS. As a customer, you will benefit from a data center
             and network architecture built to meet the requirements of the most security-sensitive
             organizations.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             AWS security offers services such as infrastructure security, DDoS mitigation, data encryption,
             inventory and configuration, monitoring and logging, identity and access control, and
             penetration testing.
@@ -28,14 +28,14 @@ const AWSSecurity = (
 )
 const Compliances = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             AWS provides 40+ compliance certifications for the global, US, and other countries.
         </p>
     </div>
 )
 const AWSglobalavailability = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
 
             AWS offers the largest global footprint in the market. No other cloud provider offers as many
             regions or Availability Zones (AZs). This includes 78 AZs within 25 geographic regions around the
@@ -46,7 +46,7 @@ const AWSglobalavailability = (
 )
 const AWSCertifications = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
 
             AWS certifications are divided into four major categories – Foundational, Associate,
             Professional, and Specialty.
@@ -106,18 +106,18 @@ const AWS = (
         <h1 className='text-2xl font-bold mb-5'>
             Amazon Web Services (AWS)
         </h1>
-        <p>
+        <p className='text-gray-500'>
             Amazon Web Services (AWS) is an Amazon company that was launched in the year 2002. AWS is
             the most popular cloud service provider in the world.
         </p>
         <br />
-        <p>
+        <p className='text-gray-500'>
             Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud
             platform, offering over 165 fully featured services from data centers globally. This service is used
             by millions of customers.
         </p>
         <br />
-        <p>
+        <p className='text-gray-500'>
             AWS’s revenue in the year 2018 was $25.6 billion with a profit of $7.2 billion. The revenue is
             expected to grow to $33 billion in 2019.
         </p>

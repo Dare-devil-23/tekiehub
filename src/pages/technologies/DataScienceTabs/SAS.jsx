@@ -5,7 +5,7 @@ const SAS = (
     <h1 className='text-2xl font-bold'>Statistical Analysis System (SAS)</h1>
     <div>
       <br />
-      <p className='md:px-5'>
+      <p className='md:px-5 text-gray-500'>
         SAS is a statistical and complex analytics tool developed by the SAS Institute. It is one of
         the oldest data analysis tools mainly built to deal with statistical operations. SAS is
         commonly used by professionals and organizations that heavily rely on advanced
@@ -19,7 +19,7 @@ const SAS = (
       </p>
       <br />
       <div className='md:px-5'>
-        <ul className='md:px-10 list-disc pl-5'>
+        <ul className='md:px-10 list-disc pl-5 text-gray-500'>
           <li>
             Easy to learn as it comes with ample tutorials and dedicated technical support.
           </li>

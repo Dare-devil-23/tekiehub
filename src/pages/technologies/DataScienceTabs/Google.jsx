@@ -5,7 +5,7 @@ const Google = (
     <h1 className='text-2xl font-bold'>Google Analytics</h1>
     <div>
       <br />
-      <p className='md:px-5'>
+      <p className='md:px-5 text-gray-500'>
         Data scientists also play a vital role in the digital marketing sector. Google Analytics is
         one of the top data science tools used in the industry for digital marketing.
       </p>
@@ -15,7 +15,7 @@ const Google = (
       </p>
       <br />
       <div className='md:px-5'>
-        <ul className='md:px-10 list-disc pl-5'>
+        <ul className='md:px-10 list-disc pl-5 text-gray-500'>
           <li>
             Helps web admins access, analyze, and visualize data to gain a better
             understanding of user interaction with websites.

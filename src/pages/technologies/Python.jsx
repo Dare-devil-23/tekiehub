@@ -5,7 +5,7 @@ const Python = () => {
     <div className='w-4/5 mx-auto py-10 text-lg'>
       <h1 className='text-2xl font-bold'>Python</h1>
       <br />
-      <p>
+      <p className='text-gray-500'>
         Python is one of the most dominant languages in the field of data science today because of its
         flexibility, ease of use in terms of syntax, open-source nature, and ability to handle, clean,
         manipulate, visualize, and analyze data. Python was essentially developed as a programming
@@ -19,7 +19,7 @@ const Python = () => {
         The following are the key features and usages of Python:
       </p>
       <br />
-      <ul className='md:px-10 list-disc pl-5'>
+      <ul className='md:px-10 list-disc pl-5 text-gray-500'>
         <li>
           Used for data cleaning, data manipulation, data visualization, and data analysis.
         </li>

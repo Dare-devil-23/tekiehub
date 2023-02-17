@@ -4,13 +4,13 @@ const GoogleCloud = (
             Google Cloud
         </h1>
         <br />
-        <p>
+        <p className="text-gray-500">
             Google cloud platform is Google’s cloud. Similar to AWS and Azure, Google Cloud also
             offers similar services in various categories, including compute, storage, identity,
             security, database, AI and machine learning, virtualization, DevOps and more.
         </p>
         <br />
-        <p>
+        <p className="text-gray-500">
             Here is a list of complete products and services categories Google Cloud Platform
             services:
             AI and Machine Learning, API Management, Compute, Containers, Data Analytics,
@@ -20,13 +20,13 @@ const GoogleCloud = (
             Security and Identity, Serverless Computing, and Storage.
         </p>
         <br />
-        <p>
+        <p className="text-gray-500">
             Google products are also offered in the cloud, including G Suite, Google Maps Platform,
             Google Hardware, Google Identity, Chrome Enterprise, Android Enterprise, Apigee,
             Firebase, and Orbitera.
         </p>
         <br />
-        <p>
+        <p className="text-gray-500">
             Google Cloud Services are available in 20 regions, 61 zones, and 200+ countries.
             Google Cloud’s annual revenue is close to $8 billion.
         </p>
@@ -38,7 +38,7 @@ const GoogleCloud = (
         <div className="md:px-5">
             <p className="font-bold">Here is a list of Google cloud certifications:</p>
             <br />
-            <ul className="list-disc md:px-10 pl-5">
+            <ul className="list-disc md:px-10 pl-5 text-gray-500">
                 <li>Associate Cloud Engineer</li><br />
                 <li>Professional Data Engineer</li><br />
                 <li>Professional Cloud Architect</li><br />

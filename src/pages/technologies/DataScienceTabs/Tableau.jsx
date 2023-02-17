@@ -5,13 +5,13 @@ const Tableau = (
     <h1 className='text-2xl font-bold'>Tableau</h1>
     <div>
       <br />
-      <p className='md:px-5'>
+      <p className='md:px-5 text-gray-500'>
         Tableau is referred to as a data visualization software that comes with powerful graphics
         to create interactive visualizations. It is majorly used by industries working in the field of
         business intelligence and analytics.
       </p>
       <br />
-      <p className='md:px-5'>
+      <p className='md:px-5 text-gray-500'>
         The most significant feature of Tableau is its ability to interact with different
         spreadsheets, databases, online analytical processing (OLAP) cubes, etc. Apart from
         these features, Tableau can also visualize geographical data by plotting longitudes and
@@ -23,7 +23,7 @@ const Tableau = (
       </p>
       <br />
       <div className='md:px-5'>
-        <ul className='md:px-10 list-disc pl-5'>
+        <ul className='md:px-10 list-disc pl-5 text-gray-500'>
           <li>
             Allows to connect with and extract data from multiple data sources and has the
             ability to visualize large datasets to find patterns and correlations.

@@ -2,7 +2,7 @@ import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab'
 import { bulma } from '@react-tabtab-next/themes';
 const SalesCloud = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The Salesforce Sales Cloud is an application designed to help organizations sell smarter and
             faster by centralizing customer information, logging interactions, allowing collaboration across
             teams, and automating various tasks. It puts all your customer and prospect information in one
@@ -12,7 +12,7 @@ const SalesCloud = (
         <div className='md:px-5'>
             <p className='font-bold'>As a business leader, you can:</p>
             <br />
-            <ul className='md:px-10 list-disc pl-5'>
+            <ul className='md:px-10 list-disc pl-5 text-gray-500'>
                 <li>
                     Easily get insight into your business, so you know where to focus your efforts and make
                     decisions based on market changes.
@@ -33,7 +33,7 @@ const SalesCloud = (
         <div className='md:px-5'>
             <p className='font-bold'>As a sales rep, you can:</p>
             <br />
-            <ul className='md:px-10 list-disc pl-5'>
+            <ul className='md:px-10 list-disc pl-5 text-gray-500'>
                 <li>
                     Manage deals from a single workspace.
                 </li>
@@ -51,7 +51,7 @@ const SalesCloud = (
 )
 const ServiceCloud = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Salesforce Service Cloud is among the most significant Salesforce Clouds and provides all the
             necessary functionalities that boost customer engagement. Its intelligent workflow automates
             business processes, facilitates customer interactions across channels, obtains real-time
@@ -61,7 +61,7 @@ const ServiceCloud = (
 )
 const MarketingCloud = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The Salesforce Marketing Cloud connects companies with every customer interaction and
             experience across different channels. It is easy to control messaging flows, react to customer
             actions, and discover useful insights to grow your business.
@@ -70,7 +70,7 @@ const MarketingCloud = (
 )
 const CommerceCloud = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The name says it all – Salesforce Commerce Cloud is a cloud-based eCommerce platform from
             the commerce cloud market where we can create eCommerce websites, manage, and sell
             products. It provides businesses with a complete infrastructure and tools to set up an
@@ -80,7 +80,7 @@ const CommerceCloud = (
         <div className='md:px-5'>
             <p className='font-bold'>Commerce Cloud major takeaways:</p>
             <br />
-            <ul className='md:px-10 list-disc pl-5'>
+            <ul className='md:px-10 list-disc pl-5 text-gray-500'>
                 <li>
                     Quick online sales with the world’s most trusted commerce platform.
                 </li>
@@ -115,14 +115,14 @@ const CommerceCloud = (
 )
 const Experience = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The Salesforce Experience Cloud platform is integrated with Salesforce and enables businesses
             to engage with customers, partners, and employees. It consists of online portals or websites
             hosted by Salesforce named Experience Sites – exquisitely branded digital experiences that are
             easy to create and maintain.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Experience Cloud ensures that the data displayed on the site is already recorded in your unique
             Salesforce CRM platform. The data shared and displayed is more than safe as the admins decide
             what to give access to and with whom. Sharing different data with different audiences enables
@@ -132,13 +132,13 @@ const Experience = (
 )
 const Analytics = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Analytics Cloud is a robust cloud-based analytical solution that accelerates exploring and
             analyzing huge volumes of data. The Salesforce Analytics Cloud is powered by Einstein Analytics
             and Tableau tools.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Analytics Cloud users can identify trends, improve efficiency and comprehend the logic behind
             the data. The solution bolsters Customer Relationship Management (CRM) by providing self-
             service analytics applications that offer deep insights into the collected data and trends.
@@ -147,7 +147,7 @@ const Analytics = (
 )
 const Benifits = (
     <div className='py-5'>
-        <ul className='md:px-10 list-disc pl-5'>
+        <ul className='md:px-10 list-disc pl-5 text-gray-500'>
             <li>
                 Cost Savings
             </li>
@@ -270,13 +270,13 @@ const SalesForce = (
         <h1 className='text-2xl font-bold mb-5'>
             Salesforce Cloud
         </h1>
-        <p>
+        <p className='text-gray-500'>
             Salesforce is a collection of tools and services designed to serve different functions. The
             platform enables companies to build process automation into their business and create
             seamless workflows.
         </p>
         <br />
-        <p>
+        <p className='text-gray-500'>
             Learn more about the different types of Salesforce Clouds and how these platforms manage
             your company’s sales, marketing, and customer relationship.
         </p>

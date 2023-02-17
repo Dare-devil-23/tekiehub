@@ -61,7 +61,7 @@ const DataScience = () => {
       <div className='w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-3xl font-bold'>Data Science</h1>
         <br />
-        <p>
+        <p className='text-gray-500'>
           Data science is the process of drawing useful insights from raw data using a combination of
           different components such as domain expertise, knowledge of math and statistics, programming
           skills, and machine learning models. The insights are later translated by business users and key

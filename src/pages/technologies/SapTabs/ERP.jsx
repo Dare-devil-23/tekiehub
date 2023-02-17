@@ -4,7 +4,7 @@ const ERP = (
             ERP
         </h1>
         <br />
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             <p>SAP ERP Central Component is the company&#39;s on-premises, stalwart ERP system, and it includes
                 supply chain management, product lifecycle management, human capital management,
                 financial management and customer relationship management software. Most simply refer to it

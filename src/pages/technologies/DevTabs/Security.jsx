@@ -3,13 +3,13 @@ import { bulma } from '@react-tabtab-next/themes';
 
 const SCA = (
     <div>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Given the fact that open-source software makes up over 90% of the
             codebase of modern applications, SCA has become an indispensable
             DevSecOps tool.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Software composition analysis (SCA) tools scan applications to detect and
             address issues (security vulnerabilities, problematic OSS licenses, and
             quality issues) in open-source code. SCA solutions also offer reporting
@@ -19,13 +19,13 @@ const SCA = (
             users properly address the issue.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             For the open-source license compliance use case, SCA inventories the
             different licenses involved in your code, flagging any components with
             licenses that violate an organization’s compliance policies.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Finally, modern SCA tools also help teams implement the key DevSecOps
             principle of delivering quality software. SCA offers code quality and
             provenance checks, helping users identify and upgrade outdated and/or
@@ -36,7 +36,7 @@ const SCA = (
 
 const SAST = (
     <div>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             SAST refers to a set of tools that scan codes (source code, binary code, byte
             code) in a non-running (read: static) state. SAST flags weaknesses in the
             code it scans, effectively surfacing common issues like CWE-79 (cross-site
@@ -48,7 +48,7 @@ const SAST = (
             left” principle of conducting security testing as early as possible in the SDLC.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             There are several significant differences between SCA and SAST, however.
             While SCA identifies vulnerabilities in open-source code, SAST detects
             vulnerabilities in proprietary code. And, as you might expect, open-source
@@ -60,14 +60,14 @@ const SAST = (
 )
 const DAST = (
     <div>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             In contrast to SAST and SCA, DAST (Dynamic Application Security Testing)
             tests for vulnerabilities in a running application. As such, it’s used later in
             the software development lifecycle.
         </p>
         <br />
 
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             DAST does not require access to source code. Instead, DAST tools detect
             vulnerabilities in a running application by (safely) injecting malicious inputs
             to identify potential security vulnerabilities within the application. A DAST
@@ -77,7 +77,7 @@ const DAST = (
             safety, content security policies, and X-Frame-Options.
         </p>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             There’s no language dependency with DAST tools because they test the
             running app, however you compile it. DAST also considers the context of
             how the application works: It tests the running application with bad inputs
@@ -88,7 +88,7 @@ const DAST = (
 )
 const ATT = (
     <div>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The days of large, dedicated QA teams are a thing of the past for
             organizations with successful DevSecOps implementations. As the U.S.
             government’s DevSecOps Fundamentals Guidebook puts it: ”Testing is
@@ -100,23 +100,23 @@ const ATT = (
         </p>
         <br />
         <div className='md:px-5'>
-            <ul className='md:px-5 list-disc pl-5'>
+            <ul className='md:px-5 list-disc pl-5 text-gray-500'>
                 <li>
-                    <span className='font-bold mr-2'>Unit tests:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Unit tests:</span>
                     Unit tests analyze individual units of code to make sure
                     they perform as expected. Unit testing tools tend to be language
                     specific.
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'>Integration tests:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Integration tests:</span>
                     Integration tests are performed after unit tests
                     and deal with the interaction between units of code. Again, many
                     of these tests are language specific.
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'> System tests: </span>
+                    <span className='font-bold mr-2 text-gray-900'> System tests: </span>
                     System tests are performed after integration tests
                     and analyze the entire application. System testing tools analyze
                     areas like usability, reliability, scalability, and more.
@@ -124,7 +124,7 @@ const ATT = (
             </ul>
         </div>
         <br />
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Performance testing, regression testing, and acceptance testing are also
             among the areas that can be automated.
         </p>
@@ -132,7 +132,7 @@ const ATT = (
 )
 const IST = (
     <div>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             The final tool we'll discuss is one that most teams are likely already familiar
             with: issue tracking software. Issue tracking systems support several key
             DevSecOps phases and activities.
@@ -143,37 +143,37 @@ const IST = (
         </p>
         <br />
         <div className='md:px-5'>
-            <ul className='md:px-5 list-disc pl-5'>
+            <ul className='md:px-5 list-disc pl-5 text-gray-500'>
                 <li>
-                    <span className='font-bold mr-2'>Automation:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Automation:</span>
                     Improves engineering efficiency by automating
                     processes like closing issues, notifying customers, assigning issues,
                     and more
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'>Issue resolution tracking and history:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Issue resolution tracking and history:</span>
                     Provides visibility and
                     structure to enable efficient bug management. Also creates a
                     record of activities related to issue resolution.
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'> Change management:</span>
+                    <span className='font-bold mr-2 text-gray-900'> Change management:</span>
                     Equips stakeholders with visibility into new
                     feature development. Offers interactive workflows and roadmaps
                     to support planning and development.
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'>Prioritization management:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Prioritization management:</span>
                     Enables teams to easily (i.e. drag and
                     drop) prioritize different fixes and activities so that they
                     continuously address the most important items
                 </li>
                 <br />
                 <li>
-                    <span className='font-bold mr-2'>Automated reporting capabilities:</span>
+                    <span className='font-bold mr-2 text-gray-900'>Automated reporting capabilities:</span>
                     Offers a consolidated view of
                     created vs. resolved issues, resolution velocity, development
                     velocity, and other important metrics.
@@ -236,7 +236,7 @@ const Security = (
         <Tabs
             showModalButton={false}
             customStyle={bulma}
-            showArrowButton={true}
+            showArrowButton={true} text-gray-500
         >
             <TabList>
                 {

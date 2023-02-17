@@ -2,7 +2,7 @@ import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab'
 import { bulma } from '@react-tabtab-next/themes';
 const Docker = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Docker a Linux-based open-source platform. Docker is a suite of DevOps
             automation tools that creates containerized environments for apps, making
             them more portable, secure, and reducing conflicts while testing. Docker
@@ -16,7 +16,7 @@ const Docker = (
 )
 const Kubernetes = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             K8s is a container orchestration and automation platform, and it’s widely
             popular amongst DevOps teams. It manages containers at a large scale and
             works well with Docker. Kubernetes automates the management of hundreds of
@@ -28,7 +28,7 @@ const Kubernetes = (
 )
 const Raygun = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Raygun is an APM (application performance monitoring) tool, and it’s top of the
             class, providing excellent monitoring and crash reporting. Raygun helps DevOps
             to identify performance issues by linking back to the problematic line of the
@@ -38,7 +38,7 @@ const Raygun = (
 )
 const Splunk = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Splunk allows you to search, analyze, and visualize machine-generated data or
             logs in real time, and to analyze the machine state and identify hardware failure
             points. By pushing the machine data to Splunk, the tool processes all available
@@ -49,7 +49,7 @@ const Splunk = (
 )
 const Git = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Git is one of the most widely used among DevOps tools in the software industry
             world, including by global giants such as Facebook, Amazon, and Microsoft and
             is particularly popular amongst remote teams and contributors. Through its
@@ -61,7 +61,7 @@ const Git = (
 )
 const Ansible = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Ansible is an agentless configuration management tool that is easy to deploy
             and offers continuous delivery. It automates many repetitive tasks, such as
             cloud provisioning, application deployment, and intra-service orchestration. Use
@@ -73,7 +73,7 @@ const Ansible = (
 )
 const Jenkins = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Jenkins is an open-source continuous integration server automates the build
             cycle of a software project and is highly customizable. It allows developers to
             automatically commit code to the repository, run test cases, and fetch reports
@@ -87,7 +87,7 @@ const Jenkins = (
 )
 const Bamboo = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Bamboo is a CI offering created by Atlassian – makers of Confluence and Jira.
             Bamboo touts “integrations that matter” and has a Small Teams package whose
             proceeds are donated to charity. Like Jenkins, Bamboo has prebuilt
@@ -99,7 +99,7 @@ const Bamboo = (
 )
 const BitBucket = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Bitbucket is another repository like GitHub. Bitbucket comes at a lower cost and
             offers developers an opportunity to collaborate throughout the development
             lifecycle. Bitbucket integrates with project management tools such as Trello and
@@ -109,7 +109,7 @@ const BitBucket = (
 )
 const GitHub = (
     <div className='py-5'>
-        <p className='md:px-5'>
+        <p className='md:px-5 text-gray-500'>
             Since 2000, GitHub has been one of the top DevOps automation tools for
             collaboration amongst developers. Not only can developers make rapid
             iterations to existing code (with notifications sent instantaneously to team
@@ -216,13 +216,13 @@ const Automation = (
         <h1 className='text-2xl font-bold mb-5'>
             Automation
         </h1>
-        <p>
+        <p className='text-gray-500'>
             DevOps Tools are applications that help automate software development processes
             while simultaneously targeting lifecycle, deployment and monitoring systems and
             more.
         </p>
         <br />
-        <p>
+        <p className='text-gray-500'>
             We put together a DevOps tools list of the best automation tools used to manage
             and deploy environments.
         </p>

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Form, Input } from 'antd';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 const validateMessages = {
   // eslint-disable-next-line
   required: '${label} is required!',

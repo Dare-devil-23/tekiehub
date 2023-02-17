@@ -2,17 +2,17 @@ import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab'
 import { bulma } from '@react-tabtab-next/themes';
 const Kafka = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Kafka is an open source distributed event dissemination platform with
             support for high-performance data pipelines, streaming analytics, data
             integration, and more. It is widely used for mission critical applications for
             its zero message loss capabilities. Kafka is widely used by organizations in
             the insurance, banking, manufacturing, and telecom industries.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Kafka supports deriving new data streams using the data streams from
                     producers.
@@ -25,16 +25,16 @@ const Kafka = (
 )
 const GoogleStackdrive = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Google Stackdriver, now known as Google cloud’s operations suite, is
             effective in monitoring, observing, improving and troubleshooting the
             applications and system performances on a Google cloud environment. It
             even has a freemium version for you to try out its functions and capabilities.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     It collects various performance metrics, traces and logs across your
                     Google cloud applications.
@@ -58,17 +58,17 @@ const GoogleStackdrive = (
 )
 const AmazonCloudwatch = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Amazon Cloudwatch is one of the prominent observability tools that
             provides monitoring and management services with actionable data insights
             for on-prem, AWS hybrid, infrastructure, application, and services. It can be
             leveraged as a single platform that accumulates various information and
             data logs on all the performance metrics.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Enables monitoring of complete stack of architecture
                 </li>
@@ -92,15 +92,15 @@ const AmazonCloudwatch = (
 )
 const Fluentd = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Fluentd is an open-source data collection tool. It is used to analyze data
             from event and application logs. It is a centralizing layer for consolidating
             different log inputs and outputs.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Flexible plugin system that allows the community to extend its
                     usability.
@@ -119,16 +119,16 @@ const Fluentd = (
 )
 const ELK = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             ELK is a stack that includes three common open-source projects:
             Elasticsearch, Logstash and Kibana. ELK allows you to collect logs from your
             applications, review and analyze these logs to create visualizations for
             better monitoring and troubleshooting.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Highly scalable and resilient
                 </li>
@@ -148,16 +148,16 @@ const ELK = (
 )
 const Graylog = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Graylog is another centralized log aggregation tool that allows real-time
             search of large amounts of data. It uses the Elasticsearch and MongoDB
             frameworks. It also functions as a repository for capturing and storing
             machine data. Graylag has paid plans for enterprises.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Extended log collection using Sidecar.
                 </li>
@@ -177,16 +177,16 @@ const Graylog = (
 )
 const Loggly = (
     <div>
-        <div className='md:px-5'>
+        <div className='md:px-5 text-gray-500'>
             Loggly is a log data processing SaaS solution. It has log tracking tools to help
             you monitor and analyze the logs generated from your infrastructure. Since
             it is a SaaS product you can start using it without installing any additional
             hardware or software.
-            <h1 className='text-lg font-bold md:pr-5 mt-6'>
+            <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
                 Features:
             </h1>
             <br />
-            <ul className='md:pl-10 list-disc pl-10'>
+            <ul className='md:pl-10 list-disc pl-10 text-gray-500'>
                 <li>
                     Proactive monitoring: View app performance, system behavior,
                     and unusual activity across the stack.

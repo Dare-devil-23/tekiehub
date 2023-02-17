@@ -11,16 +11,17 @@ import Loading from './pages/Loading';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 2000);
+    }, 2500);
     return () => clearTimeout(timer);
   }, [])
 
   return (
     <>{
-      loading ? <Loading /> : <>
+      loading ? <Loading/> : <>
         <NavBar />
         <Routes>
           <Route path="/" exact element={<Home/>} />
