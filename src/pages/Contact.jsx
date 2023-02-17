@@ -54,7 +54,7 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
+      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-5 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
         <div className='m-5 grid grid-cols-1 lg:grid-cols-3 gap-5' id="content">
           <div>
             <h1 className='text-4xl mb-10'>
@@ -81,7 +81,7 @@ const Contact = () => {
             <h1 className='text-4xl mb-10'>
               Lets Connect...
             </h1>
-            <Form name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} className="mr-5">
+            <Form name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} className="md:mr-5">
               <Form.Item name={['First name']} rules={[{ required: true }]}>
                 <Input placeholder="First Name" size='large' className='rounded-md' />
               </Form.Item>

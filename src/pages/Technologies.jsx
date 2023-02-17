@@ -35,7 +35,7 @@ const Technologies = () => {
                   </Link>
                 </div>
               </div>
-              <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
+              <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
                 <div className="mb-3">
                   <ConfigProvider theme={{
                     inherit: true,

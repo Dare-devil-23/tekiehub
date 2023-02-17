@@ -53,7 +53,7 @@ const Careers = () => {
         </div>
       </div>
 
-      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-8 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
+      <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto p-5 py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
         <div className='flex justify-between flex-col lg:flex-row'>
           <div className='w-full lg:w-1/2 mx-5'>
             <h3 className='text-xl my-3'>Search for</h3>
