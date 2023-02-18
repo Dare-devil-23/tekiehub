@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { DownOutlined, UpOutlined, MenuOutlined, CloseOutlined, CloudOutlined } from '@ant-design/icons';
-import { Dropdown, Typography } from 'antd';
+import { Dropdown } from 'antd';
 import { CgInfinity } from "react-icons/cg"
 import { VscGraph, VscServerProcess } from "react-icons/vsc"
 import { TbRobot, TbBrandPython } from "react-icons/tb"
@@ -77,15 +77,15 @@ export default function NavBar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <div className="">
               <Link to="/" className="flex items-center" onClick={() => setNavbar(false)}>
-              <motion.img whileTap={{ scale: 0.9 }} src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
+                <motion.img whileTap={{ scale: 0.9 }} src="./text.png" className="mr-3 h-10 2xl:h-10" alt="Tekiehub Logo" />
               </Link>
             </div>
             <div className="md:hidden">
-              <Typography.Link
+              <span
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <CloseOutlined className="p-0 m-0 text-lg" /> : <MenuOutlined className="p-0 m-0 text-lg" />}
-              </Typography.Link>
+              </span>
             </div>
           </div>
         </div>
@@ -96,28 +96,28 @@ export default function NavBar() {
               ${navbar ? "block" : "hidden"}`
             }
           >
-            <div className="flex flex-col md:flex-row gap-10">
+            <div className="flex flex-col md:flex-row gap-10 text-gray-500">
               <Link to="/" onClick={() => setNavbar(!navbar)} >
-                <Typography.Link className="2xl:text-lg align-top">Home</Typography.Link>
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Home</span>
               </Link>
               <Dropdown menu={{ items }} onOpenChange={() => { setServiceState(!serviceState) }} >
-                <Typography.Link className="2xl:text-lg">
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                     Technologies
                     {
                       serviceState ?
                         <UpOutlined className="text-[10px] align-middle pl-1" /> :
                         <DownOutlined className="text-[10px] align-middle pl-1" />
                     }
-                </Typography.Link>
+                </span>
               </Dropdown>
               <Link to="/about" onClick={() => setNavbar(!navbar)} >
-                <Typography.Link className="2xl:text-lg align-top">About US</Typography.Link>
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">About US</span>
               </Link>
               <Link to="/careers" onClick={() => setNavbar(!navbar)}>
-                <Typography.Link className="2xl:text-lg align-top">Careers</Typography.Link>
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Careers</span>
               </Link>
               <Link to="/contact" onClick={() => setNavbar(!navbar)}>
-                <Typography.Link className="2xl:text-lg align-top">Contact US</Typography.Link>
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Contact US</span>
               </Link>
             </div>
           </div>

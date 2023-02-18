@@ -61,7 +61,7 @@ const UIPath = (
           <br />
           <li>
             <span className='font-bold mr-2 text-gray-900'> Level of scalability and Robustness: </span>
-            <ul className='list-decimal md:px-10 py-5 pl-5 text-gray-500'>
+            <ul className='md:px-10 py-5 pl-5 text-gray-500'>
               <li>
                 Effective debugging and exception handling mechanisms
               </li>

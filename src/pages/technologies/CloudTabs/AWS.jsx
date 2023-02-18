@@ -1,5 +1,4 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from "../../../components/BasicTabs"
 
 const AWSServices = (
     <div className='py-5'>
@@ -36,7 +35,6 @@ const Compliances = (
 const AWSglobalavailability = (
     <div className='py-5'>
         <p className='md:px-5 text-gray-500'>
-
             AWS offers the largest global footprint in the market. No other cloud provider offers as many
             regions or Availability Zones (AZs). This includes 78 AZs within 25 geographic regions around the
             world. Furthermore, AWS has announced plans for 9 more AZs and three more regions in Cape
@@ -47,7 +45,6 @@ const AWSglobalavailability = (
 const AWSCertifications = (
     <div className='py-5'>
         <p className='md:px-5 text-gray-500'>
-
             AWS certifications are divided into four major categories – Foundational, Associate,
             Professional, and Specialty.
         </p>
@@ -57,7 +54,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 AWS Services
             </div>
         ),
@@ -66,7 +63,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 AWS Security
             </div>
         ),
@@ -75,7 +72,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Compliances
             </div>
         ),
@@ -84,7 +81,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 AWS global availability
             </div>
         ),
@@ -93,7 +90,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 AWS Certifications
             </div>
         ),
@@ -121,27 +118,8 @@ const AWS = (
             AWS’s revenue in the year 2018 was $25.6 billion with a profit of $7.2 billion. The revenue is
             expected to grow to $33 billion in 2019.
         </p>
-        <br/>
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <br />
+        <BasicTabs tabs={items} />
     </div>
 )
 

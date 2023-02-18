@@ -1,14 +1,13 @@
-import { Tabs } from 'antd';
 import BluePrism from './RpaTabs/BluePrism'
 import UIPath from './RpaTabs/UIPath';
 import Automation from './RpaTabs/Automation';
-import MobileHook from '../../components/MobileHook';
+import BasicTabs from '../../components/BasicTabs';
 
 const items = [
   {
     key: '1',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Blue Prism
       </div>
     ),
@@ -17,7 +16,7 @@ const items = [
   {
     key: '2',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         UI Path
       </div>
     ),
@@ -26,7 +25,7 @@ const items = [
   {
     key: '3',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Automation
       </div>
     ),
@@ -35,7 +34,6 @@ const items = [
 ];
 
 const Rpa = () => {
-  const isMobile = MobileHook()
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 text-lg'>
@@ -51,12 +49,7 @@ const Rpa = () => {
         </p>
       </div>
       <br />
-      <Tabs
-        defaultActiveKey="1"
-        items={items}
-        animated={{ tabPane: true }}
-        centered={!isMobile}
-      />
+      <BasicTabs tabs={items} addon={false} />
     </div>
   )
 };

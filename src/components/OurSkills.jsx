@@ -86,6 +86,7 @@ const data = [
     },
 ]
 const OurSkills = () => {
+    
     return (
         <div className="min-h-screen bg-cover bg-fixed bg-center bg-[url('https://images.pexels.com/photos/698808/pexels-photo-698808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')]">
             <div className='bg-transparent backdrop-blur-sm py-10'>

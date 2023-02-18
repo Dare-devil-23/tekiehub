@@ -1,5 +1,4 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from '../../../components/BasicTabs';
 const Kafka = (
     <div>
         <div className='md:px-5 text-gray-500'>
@@ -208,7 +207,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Kafka
             </div>
         ),
@@ -217,7 +216,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Google Stackdrive
             </div>
         ),
@@ -226,7 +225,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Amazon Cloudwatch
             </div>
         ),
@@ -235,7 +234,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Fluentd
             </div>
         ),
@@ -244,7 +243,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 ELK
             </div>
         ),
@@ -253,7 +252,7 @@ const items = [
     {
         key: '6',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Graylog
             </div>
         ),
@@ -262,7 +261,7 @@ const items = [
     {
         key: '7',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Loggly
             </div>
         ),
@@ -274,26 +273,7 @@ const Observability = (
     <div className='w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold'>Observability</h1>
        <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items} />
     </div>
 )
 

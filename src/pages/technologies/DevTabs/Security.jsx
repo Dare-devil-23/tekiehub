@@ -1,5 +1,4 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from '../../../components/BasicTabs';
 
 const SCA = (
     <div>
@@ -186,7 +185,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 SCA
             </div>
         ),
@@ -195,7 +194,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 SAST
             </div>
         ),
@@ -204,7 +203,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 DAST
             </div>
         ),
@@ -213,7 +212,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 ATT
             </div>
         ),
@@ -222,7 +221,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 IST
             </div>
         ),
@@ -233,26 +232,7 @@ const Security = (
     <div className='w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold'>Security</h1>
         <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true} text-gray-500
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items} />
     </div>
 )
 export default Security

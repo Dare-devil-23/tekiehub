@@ -1,16 +1,15 @@
-import { Tabs } from 'antd';
 import SAS from './DataScienceTabs/SAS'
 import Apache from './DataScienceTabs/Apache';
 import Tableau from './DataScienceTabs/Tableau';
 import PowerBi from './DataScienceTabs/PowerBi';
 import Google from './DataScienceTabs/Google';
-import MobileHook from '../../components/MobileHook';
+import BasicTabs from '../../components/BasicTabs';
 
 const items = [
   {
     key: '1',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         SAS
       </div>
     ),
@@ -19,7 +18,7 @@ const items = [
   {
     key: '2',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Apache Hadoop
       </div>
     ),
@@ -28,7 +27,7 @@ const items = [
   {
     key: '3',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Tableau
       </div>
     ),
@@ -37,7 +36,7 @@ const items = [
   {
     key: '4',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         PowerBi
       </div>
     ),
@@ -46,7 +45,7 @@ const items = [
   {
     key: '5',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Google Analyitcs
       </div>
     ),
@@ -55,7 +54,6 @@ const items = [
 ];
 
 const DataScience = () => {
-  const isMobile = MobileHook()
   return (
     <div>
       <div className='w-4/5 mx-auto py-10 text-lg'>
@@ -69,12 +67,7 @@ const DataScience = () => {
         </p>
       </div>
       <br />
-      <Tabs
-        defaultActiveKey="1"
-        items={items}
-        animated={{ tabPane: true }}
-        centered={!isMobile}
-      />
+      <BasicTabs tabs={items} addon={false} />
     </div>
   )
 };

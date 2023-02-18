@@ -1,5 +1,4 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from '../../../components/BasicTabs';
 const AIC = (
     <div className='py-5'>
         <p className='md:px-5 text-gray-500'>
@@ -71,7 +70,7 @@ const AzureCertifications = (
             Here is a list of Microsoft Azure certifications.
         </p>
         <br />
-        <ul className='md:px-10 list-decimal text-gray-500'>
+        <ul className='md:px-10 list-disc text-gray-500'>
             <li>AZ-103: Microsoft Azure Administrator</li><br />
             <li>AZ-203: Developing Solutions for Microsoft Azure</li><br />
             <li>AZ-300: Microsoft Azure Architect Technologies</li><br />
@@ -112,7 +111,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure, the Intelligent Cloud
             </div>
         ),
@@ -121,7 +120,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure Security
             </div>
         ),
@@ -130,7 +129,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Compliances
             </div>
         ),
@@ -139,7 +138,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure Stack
             </div>
         ),
@@ -149,7 +148,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure for Government
             </div>
         ),
@@ -158,7 +157,7 @@ const items = [
     {
         key: '6',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure global availability
             </div>
         ),
@@ -167,7 +166,7 @@ const items = [
     {
         key: '7',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Azure Certifications
             </div>
         ),
@@ -187,26 +186,7 @@ const Azure = (
             Reality, Mobile, Networking, Security, Storage, Web, and Windows Virtual Desktop.
         </p>
         <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items} />
     </div>
 )
 

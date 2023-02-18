@@ -1,5 +1,5 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from "../../../components/BasicTabs";
+
 const CNCF = (
     <div>
         <br />
@@ -87,7 +87,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 CNCF
             </div>
         ),
@@ -96,7 +96,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Benifits
             </div>
         ),
@@ -132,26 +132,7 @@ const CloudNative = (
         </p>
 
        <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items}/>
     </div>
 )
 

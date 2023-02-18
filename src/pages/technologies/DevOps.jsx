@@ -1,17 +1,15 @@
-import { Tabs } from 'antd';
-import { RightOutlined } from '@ant-design/icons'
 import Automation from './DevTabs/Automation'
 import CloudNative from './DevTabs/CloudNative';
 import Culture from './DevTabs/Culture';
 import Observability from './DevTabs/Observability';
 import Security from './DevTabs/Security';
-import MobileHook from '../../components/MobileHook';
+import BasicTabs from '../../components/BasicTabs';
 
 const items = [
   {
     key: '1',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Automation
       </div>
     ),
@@ -20,7 +18,7 @@ const items = [
   {
     key: '2',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Cloud-Native
       </div>
     ),
@@ -29,7 +27,7 @@ const items = [
   {
     key: '3',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Culture
       </div>
     ),
@@ -38,7 +36,7 @@ const items = [
   {
     key: '4',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Security
       </div>
     ),
@@ -47,7 +45,7 @@ const items = [
   {
     key: '5',
     label: (
-      <div className='text-xl px-5'>
+      <div className='text-lg px-2'>
         Observability
       </div>
     ),
@@ -56,17 +54,8 @@ const items = [
 ];
 
 const DevOps = () => {
-  const isMobile = MobileHook();
   return (
-    <Tabs
-      defaultActiveKey='1'
-      centered={!isMobile}
-      items={items}
-      animated={{ tabPane: true }}
-      moreIcon={<RightOutlined className='text-2xl' />}
-      size='large'
-      className='text-lg pt-10'
-    />
+    <BasicTabs tabs={items} addon={false} />
   )
 };
 export default DevOps;

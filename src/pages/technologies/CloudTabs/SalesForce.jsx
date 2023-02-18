@@ -1,5 +1,5 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from "../../../components/BasicTabs"
+
 const SalesCloud = (
     <div className='py-5'>
         <p className='md:px-5 text-gray-500'>
@@ -203,7 +203,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Sales Cloud
             </div>
         ),
@@ -212,7 +212,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Service Cloud
             </div>
         ),
@@ -221,7 +221,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Marketing Cloud
             </div>
         ),
@@ -230,7 +230,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Commerce Cloud
             </div>
         ),
@@ -239,7 +239,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Experience Cloud
             </div>
         ),
@@ -248,7 +248,7 @@ const items = [
     {
         key: '6',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Analytics Cloud
             </div>
         ),
@@ -257,7 +257,7 @@ const items = [
     {
         key: '7',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Benefits of Salesforce Clouds
             </div>
         ),
@@ -281,26 +281,7 @@ const SalesForce = (
             your company’s sales, marketing, and customer relationship.
         </p>
         <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items} />
     </div>
 )
 

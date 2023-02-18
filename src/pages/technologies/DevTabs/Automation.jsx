@@ -1,5 +1,5 @@
-import { Tabs, Panel, Tab, TabList, PanelList } from '@react-tabtab-next/tabtab';
-import { bulma } from '@react-tabtab-next/themes';
+import BasicTabs from "../../../components/BasicTabs"
+
 const Docker = (
     <div className='py-5'>
         <p className='md:px-5 text-gray-500'>
@@ -122,7 +122,7 @@ const items = [
     {
         key: '1',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Docker
             </div>
         ),
@@ -131,7 +131,7 @@ const items = [
     {
         key: '2',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Kubernetes
             </div>
         ),
@@ -140,7 +140,7 @@ const items = [
     {
         key: '3',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Raygun
             </div>
         ),
@@ -149,7 +149,7 @@ const items = [
     {
         key: '4',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Splunk
             </div>
         ),
@@ -158,7 +158,7 @@ const items = [
     {
         key: '5',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Git
             </div>
         ),
@@ -167,7 +167,7 @@ const items = [
     {
         key: '6',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Ansible
             </div>
         ),
@@ -176,7 +176,7 @@ const items = [
     {
         key: '7',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Jenkins
             </div>
         ),
@@ -185,7 +185,7 @@ const items = [
     {
         key: '8',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 Bamboo
             </div>
         ),
@@ -194,7 +194,7 @@ const items = [
     {
         key: '9',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 BitBucket
             </div>
         ),
@@ -203,7 +203,7 @@ const items = [
     {
         key: '10',
         label: (
-            <div className='text-lg px-5'>
+            <div className='text-md'>
                 GitHub
             </div>
         ),
@@ -227,26 +227,7 @@ const Automation = (
             and deploy environments.
         </p>
         <br />
-        <Tabs
-            showModalButton={false}
-            customStyle={bulma}
-            showArrowButton={true}
-        >
-            <TabList>
-                {
-                    items.map((item) => (
-                        <Tab key={item.key}>{item.label}</Tab>
-                    ))
-                }
-            </TabList>
-            <PanelList>
-                {
-                    items.map((item) => (
-                        <Panel key={item.key}>{item.children}</Panel>
-                    ))
-                }
-            </PanelList>
-        </Tabs>
+        <BasicTabs tabs={items} />
     </div>
 )
 

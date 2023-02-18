@@ -7,21 +7,21 @@ import { ConfigProvider } from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: '#1c8dc1',
-            colorLink: '#606060',
-            colorLinkHover: '#1c8dc1',
-            colorLinkActive: '#0e5981',
-          },
-        }}
-      >
+  <HashRouter>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#1c8dc1',
+          colorLink: '#606060',
+          colorLinkHover: '#1c8dc1',
+          colorLinkActive: '#0e5981',
+        },
+      }}
+    >
+      <React.StrictMode>
         <App />
-      </ConfigProvider>
-    </HashRouter>
-  </React.StrictMode>
+      </React.StrictMode>
+    </ConfigProvider>
+  </HashRouter>
 );
 

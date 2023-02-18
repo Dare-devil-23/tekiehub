@@ -111,7 +111,7 @@ const Home = () => {
             >
               {
                 services.map((service,i)=>(
-                  <img className="rounded-2xl 2xl:h-96 h-80 w-96" src={service.img} alt={service.title} key={i}/>
+                  <img className="rounded-2xl 2xl:h-96 h-80 w-full" src={service.img} alt={service.title} key={i}/>
                 ))
               }
             </Carousel>

@@ -65,7 +65,7 @@ const Automation = (
           </li>
         </ul>
       </div>
-      <h1 className='text-lg font-bold md:pr-5 mt-6'>
+      <h1 className='text-lg font-bold md:pr-5 mt-6 text-gray-900'>
         Types of Automation Anywhere Bots
       </h1>
       <br />

@@ -2,7 +2,6 @@ import React from 'react'
 import '../asserts/footer.css'
 import { Link } from 'react-router-dom'
 import { FacebookFilled, InstagramFilled, LinkedinFilled, CopyrightOutlined } from '@ant-design/icons'
-import { Typography } from 'antd'
 import { motion } from 'framer-motion'
 
 const Footer = () => {
@@ -26,18 +25,18 @@ const Footer = () => {
                             Don't miss any new updates on Technologies.! Follow us on social media.
                         </p>
                         <div className="flex space-x-6 ml-5 my-5 md:ml-10">
-                            <Typography.Link href="/">
-                                <FacebookFilled className='text-xl' />
+                            <span href="/">
+                                <FacebookFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
                                 <span className="sr-only">Facebook page</span>
-                            </Typography.Link>
-                            <Typography.Link href="/">
-                                <InstagramFilled className='text-xl' />
+                            </span>
+                            <span href="/">
+                                <InstagramFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
                                 <span className="sr-only">Instagram page</span>
-                            </Typography.Link>
-                            <Typography.Link href="/">
-                                <LinkedinFilled className='text-xl' />
+                            </span>
+                            <span href="/">
+                                <LinkedinFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
                                 <span className="sr-only">Linked in</span>
-                            </Typography.Link>
+                            </span>
                         </div>
                         <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
                             <CopyrightOutlined className="align-middle mr-1" />
@@ -51,37 +50,37 @@ const Footer = () => {
                 <div className="flex justify-around flex-1">
                     <div>
                         <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase">Technologies</h2>
-                        <div className="grid grid-cols-1 pl-1 md:pl-3">
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                        <div className="grid grid-cols-1 pl-1 md:pl-3 text-[#606060]">
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/cloud_services" onClick={handleScroll}>
                                     Cloud Services
                                 </Link>
-                            </Typography.Link>
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                            </span>
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/devops" onClick={handleScroll}>
                                     DevOps
                                 </Link>
-                            </Typography.Link>
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                            </span>
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/data_science" onClick={handleScroll}>
                                     Data Science
                                 </Link>
-                            </Typography.Link>
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                            </span>
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/rpa" onClick={handleScroll}>
                                     RPA
                                 </Link>
-                            </Typography.Link>
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                            </span>
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/sap" onClick={handleScroll}>
                                     SAP
                                 </Link>
-                            </Typography.Link>
-                            <Typography.Link className="text-left text-md 2xl:text-lg">
+                            </span>
+                            <span className="text-left text-md 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
                                 <Link to="/technologies/python" onClick={handleScroll}>
                                     Python
                                 </Link>
-                            </Typography.Link>
+                            </span>
                         </div>
                     </div>
                     <div>

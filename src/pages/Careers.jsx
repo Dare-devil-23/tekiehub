@@ -92,6 +92,7 @@ const Careers = () => {
                         title={job.role}
                         className='shadow-lg hover:shadow-2xl'
                         onClick={() => (
+                           // eslint-disable-next-line
                           setOpenJob(true),
                           setSelectedJob(job)
                         )}
