@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import JobsData from '../asserts/jobsData';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -123,8 +123,28 @@ const Careers = () => {
           cancelButtonProps={{ danger: true }}
           onOk={() => setOpenJob(false)}
           onCancel={() => setOpenJob(false)}
+          width={800}
         >
-          <p>{selectedJob.location}</p>
+          <div className='max-h-[60vh] overflow-y-auto p-5'>
+            {
+              selectedJob.jd.map((jd, index)=>(
+                <div key={index}>
+                  <h1 className='font-bold py-2'>
+                    {jd.label}
+                  </h1>
+                  <ul>
+                    {
+                      jd.list.map((item, index)=>(
+                        <li key={index} className="py-2 px-5">
+                          {item}
+                        </li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))
+            }
+          </div>
         </Modal>
       </div>
     </div>
