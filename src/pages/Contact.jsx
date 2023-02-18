@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { Form, Input, notification } from 'antd';
 import { motion } from 'framer-motion'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { LoadingOutlined } from '@ant-design/icons';
 
 const validateMessages = {
