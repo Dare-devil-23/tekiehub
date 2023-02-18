@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BluePrism = (
-  <div className='w-4/5 mx-auto py-10 text-lg'>
+  <div className='md:w-4/5 mx-auto py-10 text-lg'>
     <h1 className='text-2xl font-bold'>
       Blue Prism
     </h1>

@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { data } from "../asserts/technologies.js"
 import { IoIosArrowDown } from 'react-icons/io'
 import { Link } from 'react-router-dom'
-import { ConfigProvider } from 'antd'
 import { motion } from 'framer-motion'
 const Technologies = () => {
   let { serviceId } = useParams()
@@ -35,16 +34,9 @@ const Technologies = () => {
                   </Link>
                 </div>
               </div>
-              <div className="md:w-3/4 h-3/4 mx-5 md:mx-auto py-10 md:p-14 my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
+              <div className="m-5 p-10 py-16 md:w-3/4 md:mx-auto my-16 text-lg bg-white rounded-3xl shadow-xl" id="content">
                 <div className="mb-3">
-                  <ConfigProvider theme={{
-                    inherit: true,
-                    token: {
-                      colorBorderSecondary: 'white',
-                    }
-                  }}>
                     <Page />
-                  </ConfigProvider>
                 </div>
               </div>
             </div>

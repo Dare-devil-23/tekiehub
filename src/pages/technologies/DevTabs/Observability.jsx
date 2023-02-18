@@ -1,6 +1,7 @@
 import BasicTabs from '../../../components/BasicTabs';
 const Kafka = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Kafka is an open source distributed event dissemination platform with
             support for high-performance data pipelines, streaming analytics, data
@@ -24,6 +25,7 @@ const Kafka = (
 )
 const GoogleStackdrive = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Google Stackdriver, now known as Google cloud’s operations suite, is
             effective in monitoring, observing, improving and troubleshooting the
@@ -57,6 +59,7 @@ const GoogleStackdrive = (
 )
 const AmazonCloudwatch = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Amazon Cloudwatch is one of the prominent observability tools that
             provides monitoring and management services with actionable data insights
@@ -91,6 +94,7 @@ const AmazonCloudwatch = (
 )
 const Fluentd = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Fluentd is an open-source data collection tool. It is used to analyze data
             from event and application logs. It is a centralizing layer for consolidating
@@ -118,6 +122,7 @@ const Fluentd = (
 )
 const ELK = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             ELK is a stack that includes three common open-source projects:
             Elasticsearch, Logstash and Kibana. ELK allows you to collect logs from your
@@ -147,6 +152,7 @@ const ELK = (
 )
 const Graylog = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Graylog is another centralized log aggregation tool that allows real-time
             search of large amounts of data. It uses the Elasticsearch and MongoDB
@@ -176,6 +182,7 @@ const Graylog = (
 )
 const Loggly = (
     <div>
+        <br/>
         <div className='md:px-5 text-gray-500'>
             Loggly is a log data processing SaaS solution. It has log tracking tools to help
             you monitor and analyze the logs generated from your infrastructure. Since
@@ -270,7 +277,7 @@ const items = [
 
 ]
 const Observability = (
-    <div className='w-4/5 mx-auto py-10 text-lg'>
+    <div className='md:w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold'>Observability</h1>
        <br />
         <BasicTabs tabs={items} />

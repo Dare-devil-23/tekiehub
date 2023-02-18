@@ -175,7 +175,7 @@ const items = [
 ];
 
 const Azure = (
-    <div className='w-4/5 mx-auto py-10 text-lg'>
+    <div className='md:w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold mb-5'>
             Microsoft Azure
         </h1>

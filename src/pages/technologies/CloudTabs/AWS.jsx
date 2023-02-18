@@ -99,7 +99,7 @@ const items = [
 ];
 
 const AWS = (
-    <div className='w-4/5 mx-auto py-10 text-lg'>
+    <div className='md:w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold mb-5'>
             Amazon Web Services (AWS)
         </h1>

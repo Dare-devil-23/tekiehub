@@ -36,7 +36,7 @@ const items = [
 const Rpa = () => {
   return (
     <div>
-      <div className='w-4/5 mx-auto py-10 text-lg'>
+      <div className='md:w-4/5 mx-auto md:py-10 text-lg'>
         <h1 className='text-3xl font-bold'>Robotic Process Automation</h1>
         <br />
         <p>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Python = () => {
   return (
-    <div className='w-4/5 mx-auto py-10 text-lg'>
+    <div className='md:w-4/5 mx-auto md:py-10 text-lg'>
       <h1 className='text-2xl font-bold'>Python</h1>
       <br />
       <p className='text-gray-500'>

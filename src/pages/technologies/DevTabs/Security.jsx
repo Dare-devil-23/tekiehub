@@ -2,6 +2,7 @@ import BasicTabs from '../../../components/BasicTabs';
 
 const SCA = (
     <div>
+        <br/>
         <p className='md:px-5 text-gray-500'>
             Given the fact that open-source software makes up over 90% of the
             codebase of modern applications, SCA has become an indispensable
@@ -35,6 +36,7 @@ const SCA = (
 
 const SAST = (
     <div>
+        <br/>
         <p className='md:px-5 text-gray-500'>
             SAST refers to a set of tools that scan codes (source code, binary code, byte
             code) in a non-running (read: static) state. SAST flags weaknesses in the
@@ -59,6 +61,7 @@ const SAST = (
 )
 const DAST = (
     <div>
+        <br/>
         <p className='md:px-5 text-gray-500'>
             In contrast to SAST and SCA, DAST (Dynamic Application Security Testing)
             tests for vulnerabilities in a running application. As such, it’s used later in
@@ -87,6 +90,7 @@ const DAST = (
 )
 const ATT = (
     <div>
+        <br/>
         <p className='md:px-5 text-gray-500'>
             The days of large, dedicated QA teams are a thing of the past for
             organizations with successful DevSecOps implementations. As the U.S.
@@ -131,6 +135,7 @@ const ATT = (
 )
 const IST = (
     <div>
+        <br/>
         <p className='md:px-5 text-gray-500'>
             The final tool we'll discuss is one that most teams are likely already familiar
             with: issue tracking software. Issue tracking systems support several key
@@ -229,7 +234,7 @@ const items = [
     },
 ]
 const Security = (
-    <div className='w-4/5 mx-auto py-10 text-lg'>
+    <div className='md:w-4/5 mx-auto py-10 text-lg'>
         <h1 className='text-2xl font-bold'>Security</h1>
         <br />
         <BasicTabs tabs={items} />

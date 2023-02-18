@@ -56,7 +56,7 @@ const items = [
 const DataScience = () => {
   return (
     <div>
-      <div className='w-4/5 mx-auto py-10 text-lg'>
+      <div className='md:w-4/5 mx-auto md:py-10 text-lg'>
         <h1 className='text-3xl font-bold'>Data Science</h1>
         <br />
         <p className='text-gray-500'>
