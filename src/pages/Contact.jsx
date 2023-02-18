@@ -86,7 +86,7 @@ const Contact = () => {
               </h1>
               <ul className="text-gray-600 my-10">
                 <li className="mb-1">+1(972)-757-8767</li>
-                <li className="mb-1">website.tekiehub@gmail.com</li>
+                <li className="mb-1">info@tekiehub.com</li>
               </ul>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Contact = () => {
               <Form.Item name='Last Name' rules={[{ required: true }]}>
                 <Input placeholder="Last Name" size='large' className='rounded-md' />
               </Form.Item>
-              <Form.Item name='Email' rules={[{ type: 'email' }]}>
+              <Form.Item name='Email' rules={[{ required:true, type: 'email' }]}>
                 <Input placeholder="example@mail.com" size='large' className='rounded-md' name="user_email" />
               </Form.Item>
               <Form.Item name='Message' rules={[{ required: true }]}>

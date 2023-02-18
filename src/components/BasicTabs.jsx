@@ -46,12 +46,13 @@ export default function BasicTabs({ tabs, addon = true }) {
 
     return (
         <Box>
-            <Box >
+            <Box className="py-3">
                 <Tabs
                     value={value}
                     onChange={handleChange}
                     variant="scrollable"
                     scrollButtons="auto"
+                    allowScrollButtonsMobile={true}
                     TabScrollButtonProps={{
                         style: {
                             color: '#1c8dc1'

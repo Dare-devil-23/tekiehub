@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="mb-6 md:mb-0">
                     <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase ml-5 md:ml-10">
                         <Link to="/" onClick={handleScroll}>
-                            <motion.img whileTap={{ scale: 0.9 }} src="./logo.png" className="h-14 mb-2" alt="Tekiehub Logo" />
+                            <motion.img whileTap={{ scale: 0.9 }} src="./logo.png" className="h-14 mb-2 -ml-5 md:ml-0" alt="Tekiehub Logo" />
                         </Link>
                         Get in touch
                     </h2>
@@ -26,20 +26,20 @@ const Footer = () => {
                         </p>
                         <div className="flex space-x-6 ml-5 my-5 md:ml-10 text-[#606060]">
                             <span href="/">
-                                <FacebookFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
+                                <FacebookFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Facebook page</span>
                             </span>
                             <span href="/">
-                                <InstagramFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
+                                <InstagramFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Instagram page</span>
                             </span>
                             <span href="/">
-                                <LinkedinFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
+                                <LinkedinFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Linked in</span>
                             </span>
                         </div>
-                        <div className="mt-5 ml-5 md:ml-10 text-[#606060]">
-                            <CopyrightOutlined className="align-middle mr-1" />
+                        <div className="mt-5 ml-5 md:ml-10 text-[#606060] flex">
+                            <CopyrightOutlined className="align-middle mr-1 w-4" />
                             <span className="align-middle">
                                 {new Date().getFullYear()}
                                 {' '}TekieHub. All Rights Reserved.
@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-around flex-1">
+                <div className="md:flex md:justify-around md:flex-1 ml-6 md:ml-0">
                     <div>
                         <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase">Technologies</h2>
                         <div className="grid grid-cols-1 pl-1 md:pl-3 text-[#606060]">
@@ -84,12 +84,12 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase">Contact</h2>
+                        <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase mt-5 md:mt-0">Contact</h2>
                         <ul className="text-[#606060] pl-1 md:pl-3">
                             <li className="mb-1">9319 LBJ Freeway</li>
                             <li className="mb-1">Suite 116, Dallas, TX 75243</li>
                             <li className="mb-1">+1(972)-757-8767</li>
-                            <li className="mb-1">website.tekiehub@gmail.com</li>
+                            <li className="mb-1">info@tekiehub.com</li>
                         </ul>
                     </div>
                 </div>

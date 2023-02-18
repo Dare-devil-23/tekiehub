@@ -84,7 +84,7 @@ export default function NavBar() {
               <span
                 onClick={() => setNavbar(!navbar)}
               >
-                {navbar ? <CloseOutlined className="p-0 m-0 text-lg" /> : <MenuOutlined className="p-0 m-0 text-lg" />}
+                {navbar ? <CloseOutlined className="p-0 m-0 text-lg w-5" /> : <MenuOutlined className="p-0 m-0 text-lg w-5" />}
               </span>
             </div>
           </div>
@@ -101,12 +101,12 @@ export default function NavBar() {
                 <span className="text-sm align-top 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Home</span>
               </Link>
               <Dropdown menu={{ items }} onOpenChange={() => { setServiceState(!serviceState) }} >
-                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
+                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500 flex">
                     Technologies
                     {
                       serviceState ?
-                        <UpOutlined className="text-[10px] align-middle pl-1" /> :
-                        <DownOutlined className="text-[10px] align-middle pl-1" />
+                        <UpOutlined className="text-[10px] align-bottom pl-1 w-4" /> :
+                        <DownOutlined className="text-[10px] align-bottom pl-1 w-4" />
                     }
                 </span>
               </Dropdown>
