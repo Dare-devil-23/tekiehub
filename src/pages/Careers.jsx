@@ -118,7 +118,7 @@ const Careers = () => {
           centered
           open={openJob}
           okText={"Apply Job"}
-          okButtonProps={{ ghost: true }}
+          okButtonProps={{ ghost: true , href:'mailto:website.tekiehub@gmail.com'}}
           cancelText={"Close"}
           cancelButtonProps={{ danger: true }}
           onOk={() => setOpenJob(false)}
@@ -127,7 +127,7 @@ const Careers = () => {
         >
           <div className='max-h-[60vh] overflow-y-auto p-5'>
             {
-              selectedJob.jd.map((jd, index)=>(
+              selectedJob.jd?.map((jd, index)=>(
                 <div key={index}>
                   <h1 className='font-bold py-2'>
                     {jd.label}

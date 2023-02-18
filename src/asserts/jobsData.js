@@ -2,7 +2,7 @@ const JobsData = [
     {
       id: 1,
       role: "Automation Test Developer",
-      location: "Boston, MA",
+      location: "Remote",
       jd:[
         {
           label:'Top Requirements:',
@@ -24,7 +24,7 @@ const JobsData = [
     {
       id: 2,
       role: "Network/Wifi Engineer",
-      location: "Englewood, CO",
+      location: "Remote",
       jd:[
         {
           label:'Job Description:',
@@ -57,7 +57,7 @@ const JobsData = [
     {
       id: 3,
       role: "Senior Java Developer",
-      location: "Boston, MA",
+      location: "Remote",
       jd:[
         {
           label:'Requirements:',
@@ -152,15 +152,54 @@ const JobsData = [
     },
     {
       id: 4,
-      role: "addon",
-      location: "addon",
+      role: "Salesforce Administrator",
+      location: "Remote",
       jd:[
         {
-          label:'',
+          label:'Responsibilities:',
           list:[
-            '',
-            '',
-            ''
+            'As a Salesforce Administrator, this individual will work with different internal teams and external vendors to provide the highest standards of Administration & Support Salesforce Applications.'
+          ]
+        },
+        {
+          label:'Job Duties:',
+          list:[
+            'Provide technical knowledge in the design, development, implementation/installation, maintenance, and support of Salesforce application.',
+            'Troubleshoot & resolve issues with infrastructure and application.',
+            'Provide 24/7 application support as part of a rotating on-call schedule.'
+          ]
+        },
+        {
+          label:'Qualifications:',
+          list:[
+            '3+ years of Salesforce development and/or administration experience',
+            'Knowledge on Web service development and integration',
+            'Foundational experience with multiple Salesforce cloud solutions primarily focused on Sales and Service Cloud',
+            'Experience with Lightning web components',
+            'Active Salesforce certifications (PDI/PDII) will be a plus',
+            'Experience with Salesforce DX and automated deployment processes',
+            'Experience with databases and SQL fundamentals',
+            'Willingness to learn and work on different AWS and on-prem applications'
+          ]
+        }
+      ]
+    },
+    ,
+    {
+      id: 5,
+      role: "Salesforce Developer/Architect",
+      location: "Remote",
+      jd:[
+        {
+          label:'Job Duties:',
+          list:[
+            'As a Salesforce developer/architect you will be building and maintaining applications on Client Salesforce org.',
+            "The client's Department of Transportation currently uses Salesforce as a key application platform for various Client divisions.",
+            'We are looking to expand the power of Salesforce and develop new apps for our business units at the Client.',
+            'You will be challenged by a wide variety of projects including legacy database transformation, new custom apps, and more.',
+            'We are seeking someone with excellent technical and communication skills who can interface directly with internal stakeholders, understand their needs, configure, and customize the platform to meet new/changing business requirements.',
+            'This position will be responsible for ensuring that we are maximizing efficiency and capitalizing on all the features and benefits of the system based on various business needs.',
+            "This position will promote adoption, keep current on new releases and AppExchange solutions, and act as the primary contact and a subject matter expert on complex and/or critical system issues and processes for the Client's Salesforce environment."
           ]
         }
       ]

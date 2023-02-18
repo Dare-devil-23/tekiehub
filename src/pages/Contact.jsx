@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
-import { Form, Input } from 'antd';
+import { Form, Input, notification } from 'antd';
 import { motion } from 'framer-motion'
+import emailjs from 'emailjs-com';
+import { LoadingOutlined } from '@ant-design/icons';
+
 const validateMessages = {
   // eslint-disable-next-line
   required: '${label} is required!',
@@ -11,25 +14,34 @@ const validateMessages = {
     email: '${label} is not a valid email!',
   }
 };
-var createReactClass = require('create-react-class');
-const Maps = createReactClass({
-  iframe: function () {
-    return {
-      __html: this.props.iframe
-    }
-  },
 
-  render: function () {
-    return (
-      <div>
-        <div dangerouslySetInnerHTML={this.iframe()} />
-      </div>
-    );
-  }
-});
 const Contact = () => {
-  const onFinish = (values) => {
-    console.log(values);
+  const [api, contextHolder] = notification.useNotification();
+  const [loading, setLoading] = useState(false);
+
+  const onFinish = () => {
+    setLoading(true)
+    emailjs.sendForm('service_yolz71c', 'template_7v6f2rj', '#contact-form', '-WBpEKBZ6jxaAWN7t')
+      .then(() => {
+        setLoading(false)
+        api.success({
+          message: 'Message Sent',
+          description: 'We will get back to you soon.',
+        });
+      },
+        (e) => {
+          setLoading(false)
+          api.error({
+            message: 'Something went wrong.',
+            description: e.text
+          })
+        }).catch((e) => {
+          setLoading(false)
+          api.error({
+            message: 'Something went wrong.',
+            description: e.text
+          })
+        });
   }
   const handleScroll = () => {
     const element = document.getElementById("content");
@@ -38,6 +50,7 @@ const Contact = () => {
   const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   return (
     <div className='min-h-screen bg-slate-300'>
+      {contextHolder}
       <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
         <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
           <div className='h-4/5 flex justify-center flex-col items-center'>
@@ -73,7 +86,7 @@ const Contact = () => {
               </h1>
               <ul className="text-gray-600 my-10">
                 <li className="mb-1">+1(972)-757-8767</li>
-                <li className="mb-1">admin@tekiehub.com</li>
+                <li className="mb-1">website.tekiehub@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -81,33 +94,35 @@ const Contact = () => {
             <h1 className='text-4xl mb-10'>
               Lets Connect...
             </h1>
-            <Form name="nest-messages" onFinish={onFinish} validateMessages={validateMessages} className="md:mr-5">
-              <Form.Item name={['First name']} rules={[{ required: true }]}>
-                <Input placeholder="First Name" size='large' className='rounded-md' />
+            <Form name="nest-messages" id='contact-form' onFinish={onFinish} validateMessages={validateMessages} className="md:mr-5">
+              <Form.Item name='First Name' rules={[{ required: true }]}>
+                <Input placeholder="First Name" size='large' className='rounded-md' name="from_name" />
               </Form.Item>
-              <Form.Item name={['Last name']} rules={[{ required: true }]}>
+              <Form.Item name='Last Name' rules={[{ required: true }]}>
                 <Input placeholder="Last Name" size='large' className='rounded-md' />
               </Form.Item>
-              <Form.Item name={['Email']} rules={[{ type: 'email' }]}>
-                <Input placeholder="example@mail.com" size='large' className='rounded-md' />
+              <Form.Item name='Email' rules={[{ type: 'email' }]}>
+                <Input placeholder="example@mail.com" size='large' className='rounded-md' name="user_email" />
               </Form.Item>
-              <Form.Item name={['Message']}>
-                <Input.TextArea placeholder="Message" size='large' className='rounded-md' />
+              <Form.Item name='Message' rules={[{ required: true }]}>
+                <Input.TextArea placeholder="Message" size='large' className='rounded-md' name="message" />
               </Form.Item>
               <Form.Item className='flex justify-center'>
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  type="button"
+                  type="submit"
                   className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 font-medium rounded-full text-md w-32 py-3 text-center">
-                  Submit
+                  {
+                    loading ? <LoadingOutlined className="text-lg" /> : <span>Submit</span>
+                  }
                 </motion.button>
               </Form.Item>
             </Form>
           </div>
         </div>
       </div>
-      <Maps iframe={iframe}/>
+      <div dangerouslySetInnerHTML={{ __html: iframe }} />
     </div>
   )
 }

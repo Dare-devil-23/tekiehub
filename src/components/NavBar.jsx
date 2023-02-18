@@ -98,7 +98,7 @@ export default function NavBar() {
           >
             <div className="flex flex-col md:flex-row gap-10 text-gray-500">
               <Link to="/" onClick={() => setNavbar(!navbar)} >
-                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Home</span>
+                <span className="text-sm align-top 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Home</span>
               </Link>
               <Dropdown menu={{ items }} onOpenChange={() => { setServiceState(!serviceState) }} >
                 <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">
@@ -111,13 +111,13 @@ export default function NavBar() {
                 </span>
               </Dropdown>
               <Link to="/about" onClick={() => setNavbar(!navbar)} >
-                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">About US</span>
+                <span className="text-sm align-top 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">About US</span>
               </Link>
               <Link to="/careers" onClick={() => setNavbar(!navbar)}>
-                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Careers</span>
+                <span className="text-sm align-top 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Careers</span>
               </Link>
               <Link to="/contact" onClick={() => setNavbar(!navbar)}>
-                <span className="text-sm 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Contact US</span>
+                <span className="text-sm align-top 2xl:text-lg hover:text-[#1c8dc1] hover:transition-all hover:duration-500">Contact US</span>
               </Link>
             </div>
           </div>

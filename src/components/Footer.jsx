@@ -24,7 +24,7 @@ const Footer = () => {
                         <p className=" ml-5 md:ml-10 text-[#606060]">
                             Don't miss any new updates on Technologies.! Follow us on social media.
                         </p>
-                        <div className="flex space-x-6 ml-5 my-5 md:ml-10">
+                        <div className="flex space-x-6 ml-5 my-5 md:ml-10 text-[#606060]">
                             <span href="/">
                                 <FacebookFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500' />
                                 <span className="sr-only">Facebook page</span>
@@ -89,7 +89,7 @@ const Footer = () => {
                             <li className="mb-1">9319 LBJ Freeway</li>
                             <li className="mb-1">Suite 116, Dallas, TX 75243</li>
                             <li className="mb-1">+1(972)-757-8767</li>
-                            <li className="mb-1">admin@tekiehub.com</li>
+                            <li className="mb-1">website.tekiehub@gmail.com</li>
                         </ul>
                     </div>
                 </div>
