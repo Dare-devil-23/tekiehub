@@ -117,7 +117,7 @@ const OurSkills = () => {
                                     </VisibilitySensor>
                                     <div className='text-lg text-center mt-5 text-white flex justify-center'>
                                         <span className='mx-2 items-center flex'>
-                                            <Icon className='text-2xl' />
+                                            <Icon className='text-2xl w-5' />
                                         </span>
                                         {skill.title}
                                     </div>

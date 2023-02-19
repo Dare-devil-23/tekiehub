@@ -37,7 +37,7 @@ const items = [
     key: '4',
     label: (
       <div className='text-lg px-2'>
-        PowerBi
+        Power Bi
       </div>
     ),
     children: PowerBi,
