@@ -25,18 +25,18 @@ const Footer = () => {
                             Don't miss any new updates on Technologies.! Follow us on social media.
                         </p>
                         <div className="flex space-x-6 ml-5 my-5 md:ml-10 text-[#606060]">
-                            <span href="/">
+                            <a target={'_blank'} rel="noreferrer" href="https://www.facebook.com/100090585845996/">
                                 <FacebookFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Facebook page</span>
-                            </span>
-                            <span href="/">
+                            </a>
+                            <a target={'_blank'} rel="noreferrer" href="https://www.instagram.com/tekiehub_llc/">
                                 <InstagramFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Instagram page</span>
-                            </span>
-                            <span href="/">
+                            </a>
+                            <a target={'_blank'} rel="noreferrer" href="https://www.linkedin.com/in/tekiehub-llc-60ab92266/">
                                 <LinkedinFilled className='text-xl hover:text-[#1c8dc1] hover:transition-all hover:duration-500 w-5' />
                                 <span className="sr-only">Linked in</span>
-                            </span>
+                            </a>
                         </div>
                         <div className="mt-5 ml-5 md:ml-10 text-[#606060] flex">
                             <CopyrightOutlined className="align-middle mr-1 w-4" />
