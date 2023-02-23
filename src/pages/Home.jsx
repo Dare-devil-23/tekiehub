@@ -65,7 +65,7 @@ const Home = () => {
           <div className='md:w-[50%] m-2 md:m-5 flex items-center  2xl:m-10'>
             <div className="md:w-full">
               <h1 className='text-2xl md:text-4xl'>
-                Are you looking for placement <br/>in {' '}
+                Are you looking for services <br/>in {' '}
                 <span className='text-[#1c8dc1] font-bold leading-relaxed'>
                   <Typewriter
                     words={services.map((service) => service.label)}
