@@ -18,7 +18,7 @@ const Technologies = () => {
           const Page = tech.page
           return (
             <div className='min-h-screen bg-slate-300 pb-10' key={i}>
-              <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr">
+              <div className="bg-gradient-to-br from-gray-900 via-[#0f0f43] to-[#107797] hover:bg-gradient-to-tr transition-all duration-700">
                 <div className='flex flex-col  text-white h-80 2xl:h-96 items-center mb-12 bg-transparent backdrop-blur-sm'>
                   <div className='h-4/5 flex justify-center flex-col items-center'>
                     <motion.div className="p-5 text-5xl"

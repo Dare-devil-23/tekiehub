@@ -84,7 +84,7 @@ const Home = () => {
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
                       type="button"
-                      className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 dark:shadow-lg font-medium rounded-full text-md w-36 py-2 text-center">
+                      className="text-white bg-gradient-to-r from-[#1072a5] via-[#2096ce] to-[#5f9ab5] hover:bg-gradient-to-br shadow-lg shadow-blue-500/50 font-medium rounded-full text-md w-32 py-2 text-center">
                       Explore
                     </motion.button>
                   </Link>
@@ -94,7 +94,6 @@ const Home = () => {
             </div>
           </div>
           <motion.div
-            whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.9 }}
             className='md:w-[50%] m-2 md:m-5 2xl:m-10'
           >
