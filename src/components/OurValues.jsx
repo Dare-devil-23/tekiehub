@@ -15,7 +15,7 @@ const OurValues = () => {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg">
                     <div className="flex flex-col items-center pb-10">
                         <img className="w-24 h-24 mt-10 mb-5" src={team} alt="Team Work" />
-                        <h5 className="mb-5 text-xl font-medium text-blue-800">
+                        <h5 className="mb-5 text-xl font-medium text-[#28a4d6]">
                             Team Work
                         </h5>
                         <span className="text-lg md:text-sm 2xl:text-lg text-zinc-900 w-3/4">
@@ -28,7 +28,7 @@ const OurValues = () => {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg">
                     <div className="flex flex-col items-center pb-10">
                         <img className="w-24 h-24 mt-10 mb-5" src={dedication} alt="Team Work" />
-                        <h5 className="mb-5 text-xl font-medium text-blue-800">
+                        <h5 className="mb-5 text-xl font-medium text-[#28a4d6]">
                             Dedication
                         </h5>
                         <span className="text-lg md:text-sm 2xl:text-lg text-zinc-900 w-3/4">
@@ -41,7 +41,7 @@ const OurValues = () => {
                 <div className="bg-white rounded-lg shadow-md hover:shadow-lg">
                     <div className="flex flex-col items-center pb-10">
                         <img className="w-24 h-24 mt-10 mb-5" src={innovation} alt="Team Work" />
-                        <h5 className="mb-5 text-xl font-medium text-blue-800">
+                        <h5 className="mb-5 text-xl font-medium text-[#28a4d6]">
                             Innovative Thinking
                         </h5>
                         <span className="text-lg md:text-sm 2xl:text-lg text-zinc-900 w-3/4">
