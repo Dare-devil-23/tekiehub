@@ -15,56 +15,56 @@ const NavBar = forwardRef(({ open, setOpen }, ref) => {
     {
       key: '0',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/cloud_services">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/cloud_services">
           Cloud Services
         </Link>
       ),
-      icon: <CloudOutlined className="text-lg w-5" />
+      icon: <CloudOutlined className="text-lg w-5 align-middle" />
     },
     {
       key: '1',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/devops">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/devops">
           DevOps
         </Link>
       ),
-      icon: <CgInfinity className="text-lg w-5" />
+      icon: <CgInfinity className="text-lg w-5 align-middle" />
     },
     {
       key: '2',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/data_science">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/data_science">
           Data Science
         </Link>
       ),
-      icon: <VscGraph className="text-lg w-5" />
+      icon: <VscGraph className="text-lg w-5 align-middle" />
     },
     {
       key: '3',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/rpa">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/rpa">
           RPA
         </Link>
       ),
-      icon: <TbRobot className="text-lg w-5" />
+      icon: <TbRobot className="text-lg w-5 align-middle" />
     },
     {
       key: '4',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/sap">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/sap">
           SAP
         </Link>
       ),
-      icon: <VscServerProcess className="text-lg w-5" />
+      icon: <VscServerProcess className="text-lg w-5 align-middle" />
     },
     {
       key: '5',
       label: (
-        <Link className="text-lg xl:text-sm 2xl:text-lg hover:text-[#1c8dc1] transition-all duration-700" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/python">
+        <Link className="text-lg xl:text-sm 2xl:text-lg" onClick={() => setOpen(false)} rel="noopener noreferrer" to="/technologies/python">
           Python
         </Link>
       ),
-      icon: <TbBrandPython className="text-lg w-5" />
+      icon: <TbBrandPython className="text-lg w-5 align-middle" />
     },
   ]
 
