@@ -4,7 +4,7 @@ import DigitalSolutionImages from '../asserts/DigitalSolutions';
 
 const data = [
   {
-    title: 'Digitalization',
+    title: 'Digital Solutions',
     description: `We are committed to take off the workload from
     your marketing, creative team by providing high quality,
     cost effective digital production solutions that
@@ -12,7 +12,7 @@ const data = [
     avatar: DigitalSolutionImages[0]
   },
   {
-    title: `Automation`,
+    title: `Project Services`,
     description: `Tekiehub with its strong training and staffing background,
     is your trusted outsourcing partner. If you want to
     augment your project team, need help with niche technologies,
@@ -20,7 +20,7 @@ const data = [
     avatar: DigitalSolutionImages[1]
   },
   {
-    title: `Decentralization`,
+    title: `Hire Train & Deploy`,
     description: `We have developed the 'Hire, Train & Deploy'
     model as part of our ongoing commitment to
     providing cost-effective skilled talents
@@ -29,7 +29,7 @@ const data = [
     avatar: DigitalSolutionImages[4]
   },
   {
-    title: `Dativization`,
+    title: `Training Venues`,
     description: `Our International standard training
     infrastructure ensures successful
     learning experience for you.
@@ -39,7 +39,7 @@ const data = [
     avatar: DigitalSolutionImages[5]
   },
   {
-    title: `CyberSecuritization`,
+    title: `Corporate Training`,
     description: `Innovative Technology Solutions offers different choices
     when it comes to modes of learning. Whether you prefer
     to learn alone or with a group, ITS makes anything
@@ -62,7 +62,7 @@ const OurServices = () => {
       <div className='mx-auto p-5 md:p-10 lg:pb-20'>
         <div className='w-full mx-auto flex flex-col justify-center text-center mb-16 mt-10 md:mt-0'>
           <h1 className='text-4xl xl:text-3xl 2xl:text-4xl m-5 mb-0 relative group w-fit mx-auto'>
-            Transform your business to
+            Our Digital Solutions
             <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] transition-all duration-700 group-hover:w-full"></span>
           </h1>
         </div>
