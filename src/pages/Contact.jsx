@@ -85,7 +85,7 @@ const Contact = () => {
                 CONTACT US
               </h1>
               <ul className="text-gray-600 my-10">
-                <li className="mb-1">+1(972)-757-8767</li>
+                <li className="mb-1">+1(972)-777-3035</li>
                 <li className="mb-1">info@tekiehub.com</li>
               </ul>
             </div>

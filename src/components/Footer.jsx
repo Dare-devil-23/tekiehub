@@ -87,7 +87,7 @@ const Footer = () => {
                         <ul className="text-[#606060] pl-1 md:pl-3">
                             <li className="py-1">9319 LBJ Freeway</li>
                             <li className="py-1">Suite 116, Dallas, TX 75243</li>
-                            <li className="py-1">+1(972)-757-8767</li>
+                            <li className="py-1">+1(972)-777-3035</li>
                             <li className="py-1">info@tekiehub.com</li>
                         </ul>
                     </div>
