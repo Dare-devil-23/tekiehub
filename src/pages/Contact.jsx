@@ -47,7 +47,7 @@ const Contact = () => {
     const element = document.getElementById("content");
     element.scrollIntoView({ behavior: "smooth" });
   };
-  const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.40166585048!2d-96.73947088543058!3d32.91398448429738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c1fee73400001%3A0x47ff73f2d26a5964!2s9319%20Lyndon%20B%20Johnson%20Fwy%20Suite%20116%2C%20Dallas%2C%20TX%2075243%2C%20USA!5e0!3m2!1sen!2sin!4v1662753015416!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  const iframe = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.6167683207846!2d-96.69765908577638!3d32.88185768594146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864ea0920c407493%3A0xc2d413b2b041ad9b!2s10945%20Estate%20Ln%20e212%2C%20Dallas%2C%20TX%2075238%2C%20USA!5e0!3m2!1sen!2sin!4v1681241806700!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
   return (
     <div className='min-h-screen bg-slate-300'>
       {contextHolder}
@@ -78,8 +78,8 @@ const Contact = () => {
                 ADDRESS
               </h1>
               <ul className="text-gray-600 my-10">
-                <li className="mb-1">9319 LBJ Freeway</li>
-                <li className="mb-1">Suite 116, Dallas, TX 75243</li>
+                <li className="mb-1">10945 Estate Ln</li>
+                <li className="mb-1">Suite E212, Dallas, TX 75238</li>
               </ul>
               <h1 className='text-2xl mb-5'>
                 CONTACT US
