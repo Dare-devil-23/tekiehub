@@ -20,11 +20,11 @@ const OurClients = () => {
             <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] transition-all duration-700 group-hover:w-full"></span>
           </h1>
         </div>
-       <div className='w-3/4 mx-auto'>
+       <div className='w-full md:w-3/4 mx-auto'>
         <Row gutter={[16,16]} justify='center'>
           {
             data.map((item, i) => (
-              <Col span={6}>
+              <Col xs={12} sm={12} md={6}>
                 <Card key={i} className="shadow-lg rouded text-center h-[120px]" bodyStyle={{height:'100%',display:'flex',alignItems:'center'}}>
                   <img src={item} alt={i} className='w-[500px] align-middle grayscale hover:filter-none transition-all duration-500'/>
                 </Card>
