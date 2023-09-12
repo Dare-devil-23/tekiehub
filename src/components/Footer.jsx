@@ -37,9 +37,9 @@ const Footer = () => {
                 <span className="sr-only">Linked in</span>
               </a>
             </div>
-            <div className="mt-5 ml-5 md:ml-10 text-[#606060] flex">
-              <CopyrightOutlined className="align-middle mr-1 w-4" />
-              <span className="align-middle">
+            <div className="mt-5 ml-5 md:ml-10 text-[#606060] flex items-center">
+              <CopyrightOutlined className="mr-1 w-4" />
+              <span>
                 {new Date().getFullYear()}
                 {' '}TekieHub. All Rights Reserved.
               </span>

@@ -39,8 +39,8 @@ const SkillCircle = ({ skill, Icon }) => {
                     })}
                 />
             </div>
-            <div className='text-lg text-center mt-5 text-white flex justify-center'>
-                <span className='mx-2 items-center flex'>
+            <div className='text-lg text-center mt-5 text-white flex justify-center items-center'>
+                <span className='mx-2'>
                     <Icon className='text-2xl w-5' />
                 </span>
                 {skill.title}

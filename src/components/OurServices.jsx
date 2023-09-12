@@ -59,7 +59,7 @@ const data = [
 const OurServices = () => {
   return (
     <div className='bg-slate-100 mt-24'>
-      <div className='mx-auto p-5 md:p-10 lg:pb-20'>
+      <div className='mx-auto p-5 pb-10 md:p-10 lg:pb-14'>
         <div className='w-full mx-auto flex flex-col justify-center text-center mb-16 mt-10 md:mt-0'>
           <h1 className='text-4xl xl:text-3xl 2xl:text-4xl m-5 mb-0 relative group w-fit mx-auto'>
             Our Digital Solutions

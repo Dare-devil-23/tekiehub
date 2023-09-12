@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import OurServices from '../components/OurServices'
 import OurSkills from '../components/OurSkills';
 import { motion } from 'framer-motion';
+import OurClients from '../components/OurClients';
 
 const services = [
   {
@@ -55,7 +56,7 @@ const Home = () => {
   }
 
   return (
-    <div className='min-h-screen '>
+    <div>
       <div className='w-11/12 mx-auto my-10'>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -120,6 +121,7 @@ const Home = () => {
       </div>
       <OurServices />
       <OurSkills />
+      <OurClients />
     </div>
   )
 }
