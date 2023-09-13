@@ -1,14 +1,14 @@
 import React from 'react'
-import { Card, Row, Col } from 'antd'
+import Marquee from "react-fast-marquee";
 
 const data = [
-  '/clients/airbnb.png',
-  '/clients/facebook.png',
-  '/clients/google.png',
-  '/clients/oneplus.png',
-  '/clients/twitter.png',
-  '/clients/microsoft.png',
-  '/clients/samsung.png'
+  '/clients/element.png',
+  '/clients/freddie.png',
+  '/clients/hexaware.png',
+  '/clients/iowa.png',
+  '/clients/newyork.png',
+  '/clients/palmer.png',
+  '/clients/randstand.png'
 ]
 const OurClients = () => {
   return (
@@ -16,23 +16,21 @@ const OurClients = () => {
       <div className='mx-auto p-5 pb-10 md:p-10 lg:pb-14'>
         <div className='w-full mx-auto flex flex-col justify-center text-center mb-16'>
           <h1 className='text-4xl xl:text-3xl 2xl:text-4xl mb-0 relative group w-fit mx-auto'>
-            Our Clients
+            Our Partners
             <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] transition-all duration-700 group-hover:w-full"></span>
           </h1>
         </div>
-       <div className='w-full md:w-3/4 mx-auto'>
-        <Row gutter={[16,16]} justify='center'>
-          {
-            data.map((item, i) => (
-              <Col xs={12} sm={12} md={6}>
-                <Card key={i} className="shadow-lg rouded text-center h-[120px]" bodyStyle={{height:'100%',display:'flex',alignItems:'center'}}>
-                  <img src={item} alt={i} className='w-[500px] align-middle grayscale hover:filter-none transition-all duration-500'/>
-                </Card>
-              </Col>
-            ))
-          }
-        </Row>
-       </div>
+        <Marquee>
+          <div className='flex'>
+              {
+                data.map((item, i) => (
+                  <div key={i} className="rouded text-center h-[120px] w-fit mx-5 flex items-center">
+                    <img src={item} alt={i} className='w-[200px] align-middle grayscale hover:filter-none transition-all duration-300'/>
+                  </div>
+                ))
+              }
+          </div>
+        </Marquee>
       </div>
     </div>
   )
