@@ -184,7 +184,6 @@ const JobsData = [
         }
       ]
     },
-    ,
     {
       id: 5,
       role: "Salesforce Developer/Architect",

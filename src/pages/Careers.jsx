@@ -8,7 +8,6 @@ import { motion } from 'framer-motion'
 
 const Careers = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [searchProp, setSearchProp] = useState("");
   const [openJob, setOpenJob] = useState(false);
   const [selectedJob, setSelectedJob] = useState({});
 
@@ -17,22 +16,12 @@ const Careers = () => {
     element.scrollIntoView({ behavior: "smooth" });
   };
 
-  const results = JobsData
-    .filter((val) => {
-      if (searchTerm === "") {
-        return val;
-      } else if (
-        searchProp === "role" &&
-        val?.role.toLowerCase().includes(searchTerm.toLowerCase())
-      ) {
-        return val;
-      } else if (
-        searchProp === "location" &&
-        val?.location.toLowerCase().includes(searchTerm.toLowerCase())
-      ) {
-        return val;
-      }
-    })
+  const results = JobsData.filter((job) => {
+    return (
+      job.role.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      job.location.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  });
 
   return (
     <div className='bg-slate-300 pb-5'>
@@ -63,7 +52,6 @@ const Careers = () => {
               className='w-10/12'
               onChange={(e) => {
                 setSearchTerm(e.target.value);
-                setSearchProp("role");
               }}
             />
           </div>
@@ -76,7 +64,6 @@ const Careers = () => {
               className='w-10/12'
               onChange={(e) => {
                 setSearchTerm(e.target.value);
-                setSearchProp("location");
               }}
             />
           </div>
