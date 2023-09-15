@@ -20,7 +20,7 @@ const OurClients = () => {
             <span className="absolute -bottom-1 rounded-lg left-0 w-0 h-1 top-10 bg-[#1c8dc1] transition-all duration-700 group-hover:w-full"></span>
           </h1>
         </div>
-        <Marquee direction='right'>
+        <Marquee speed={20}>
           <div className='flex'>
               {
                 data.map((item, i) => (
