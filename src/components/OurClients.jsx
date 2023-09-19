@@ -8,7 +8,8 @@ const data = [
   '/clients/iowa.png',
   '/clients/newyork.png',
   '/clients/palmer.png',
-  '/clients/randstand.png'
+  '/clients/randstand.png',
+  '/clients/tcs.png'
 ]
 const OurClients = () => {
   return (
